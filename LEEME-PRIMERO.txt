@@ -1,0 +1,32 @@
+CARRUSELES MANTUA · REPOSITORIO NUEVO
+
+1. Entra en GitHub con mantuagestion-lab. Este repositorio se llama
+   CARRUSEL-LOGOS. (el punto final forma parte del nombre).
+   No necesitas crear otro repositorio ni subir un ZIP.
+
+2. Abre https://github.com/mantuagestion-lab/CARRUSEL-LOGOS./settings/pages
+   En Build and deployment > Source, selecciona GitHub Actions.
+   No necesitas crear otra plantilla: la publicación ya está configurada
+   en los archivos de este repositorio.
+
+3. Abre Actions > Publicar carrusel Mantua. Si la primera ejecución falló
+   antes de activar Pages, pulsa Run workflow, deja main y confirma.
+   Espera a que termine en verde.
+
+4. En Settings > Pages, pulsa Visit site.
+   Verás tres carruseles con botones Copiar enlace y Copiar código.
+   Los enlaces se generan con la dirección de la cuenta nueva.
+
+5. En Google Sites abre la página. Ve a Insertar > Insertar/Incorporar >
+   Por URL y pega el enlace de cada grupo. Ajusta el alto del bloque,
+   comprueba computadora y celular, y pulsa Publicar.
+
+No reemplaces los carruseles actuales hasta comprobar que los nuevos
+funcionan. Los logos pueden mejorarse después sin cambiar los enlaces.
+
+CALIDAD DE LAS IMÁGENES
+
+31 logos: 11 mejorados y 20 pendientes de un original mejor.
+Consulta LOGOS.md o la revisión accesible desde el panel publicado.
+Para los pendientes necesitamos SVG, PDF vectorial o imágenes originales
+de buena resolución. Agrandar los PNG pequeños no recupera sus detalles.

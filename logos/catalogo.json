@@ -1,0 +1,198 @@
+{
+  "COMERCIAL/19.png": {
+    "nombre": "DIF Apaseo el Grande",
+    "estado": "pendiente",
+    "origen": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/COMERCIAL/19.png",
+    "nota": "Original de 80 × 50 px. Hace falta el SVG, PDF vectorial o una imagen original mayor; no se ha ampliado artificialmente."
+  },
+  "COMERCIAL/20.png": {
+    "nombre": "DIF Cortazar",
+    "estado": "pendiente",
+    "origen": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/COMERCIAL/20.png",
+    "nota": "Original de 80 × 50 px. Hace falta el SVG, PDF vectorial o una imagen original mayor; no se ha ampliado artificialmente."
+  },
+  "COMERCIAL/21.png": {
+    "nombre": "Oxford Instituto Educativo",
+    "estado": "pendiente",
+    "origen": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/COMERCIAL/21.png",
+    "nota": "Original de 80 × 50 px. Hace falta el SVG, PDF vectorial o una imagen original mayor; no se ha ampliado artificialmente."
+  },
+  "COMERCIAL/22.png": {
+    "nombre": "Emblema de cliente comercial (por identificar)",
+    "estado": "pendiente",
+    "origen": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/COMERCIAL/22.png",
+    "nota": "Original de 80 × 50 px. Hace falta el SVG, PDF vectorial o una imagen original mayor; no se ha ampliado artificialmente."
+  },
+  "COMERCIAL/23.png": {
+    "nombre": "UTEC Celaya",
+    "estado": "pendiente",
+    "origen": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/COMERCIAL/23.png",
+    "nota": "Original de 80 × 50 px. Hace falta el SVG, PDF vectorial o una imagen original mayor; no se ha ampliado artificialmente."
+  },
+  "COMERCIAL/24.png": {
+    "nombre": "Centro Escolar Grimm",
+    "estado": "pendiente",
+    "origen": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/COMERCIAL/24.png",
+    "nota": "Original de 80 × 50 px. Hace falta el SVG, PDF vectorial o una imagen original mayor; no se ha ampliado artificialmente."
+  },
+  "COMERCIAL/25.png": {
+    "nombre": "ITESBA Colegio",
+    "estado": "pendiente",
+    "origen": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/COMERCIAL/25.png",
+    "nota": "Original de 80 × 50 px. Hace falta el SVG, PDF vectorial o una imagen original mayor; no se ha ampliado artificialmente."
+  },
+  "COMERCIAL/26.png": {
+    "nombre": "La Salle León",
+    "estado": "pendiente",
+    "origen": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/COMERCIAL/26.png",
+    "nota": "Original de 80 × 50 px. Hace falta el SVG, PDF vectorial o una imagen original mayor; no se ha ampliado artificialmente."
+  },
+  "INDUSTRIA/17.png": {
+    "nombre": "GKN Automotive",
+    "estado": "mejorado",
+    "origen": "https://commons.wikimedia.org/wiki/File:GKN_Automotive_Logo_2021.png",
+    "nota": "PNG 1656 × 556; sin modificación del archivo.",
+    "archivo_original": "https://upload.wikimedia.org/wikipedia/commons/9/96/GKN_Automotive_Logo_2021.png"
+  },
+  "INDUSTRIA/18.png": {
+    "nombre": "Gentherm",
+    "estado": "pendiente",
+    "origen": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/INDUSTRIA/18.png",
+    "nota": "Original de 80 × 50 px. Hace falta el SVG, PDF vectorial o una imagen original mayor; no se ha ampliado artificialmente."
+  },
+  "INDUSTRIA/19.png": {
+    "nombre": "Honda",
+    "estado": "mejorado",
+    "origen": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS",
+    "nota": "PNG 2737 × 2220 recuperado del historial del repositorio original; objeto Git 6440216cbc92eb597d5b4e7c6b3d34a3d586d415."
+  },
+  "INDUSTRIA/20.svg": {
+    "nombre": "Hanwa",
+    "estado": "mejorado",
+    "origen": "https://www.hanwa.co.jp/en/",
+    "nota": "SVG oficial; composición horizontal.",
+    "archivo_original": "https://www.hanwa.co.jp/ms/ms-sttn/themes/hkthm16/images/en/common/header_logo.svg"
+  },
+  "INDUSTRIA/21.svg": {
+    "nombre": "Hutchinson",
+    "estado": "mejorado",
+    "origen": "https://www.hutchinson.com/en",
+    "nota": "SVG oficial; composición horizontal.",
+    "archivo_original": "https://www.hutchinson.com/themes/custom/hutchinson/logo.svg"
+  },
+  "INDUSTRIA/22.gif": {
+    "nombre": "Sigma Alimentos",
+    "estado": "mejorado",
+    "origen": "https://commons.wikimedia.org/wiki/File:Sigma_Alimentos_Logo.gif",
+    "nota": "GIF estático de 885 × 501 de la versión ya utilizada.",
+    "archivo_original": "https://upload.wikimedia.org/wikipedia/commons/2/29/Sigma_Alimentos_Logo.gif"
+  },
+  "INDUSTRIA/23.svg": {
+    "nombre": "Bachoco",
+    "estado": "mejorado",
+    "origen": "https://bachoco.com/",
+    "nota": "SVG oficial actual, con lema.",
+    "archivo_original": "https://bachoco.com/img/logo.svg"
+  },
+  "INDUSTRIA/24.png": {
+    "nombre": "Golden Foods",
+    "estado": "mejorado",
+    "origen": "https://www.goldenfoods.com.mx/",
+    "nota": "PNG original de 1134 × 930.",
+    "archivo_original": "https://images.squarespace-cdn.com/content/v1/651d9435c354f02413e87e12/ba28310e-1004-4d7f-96a2-a40ff764bb82/logo_goldenfoods.png"
+  },
+  "INDUSTRIA/25.png": {
+    "nombre": "Usabiaga",
+    "estado": "pendiente",
+    "origen": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/INDUSTRIA/25.png",
+    "nota": "Original de 80 × 50 px. Hace falta el SVG, PDF vectorial o una imagen original mayor; no se ha ampliado artificialmente."
+  },
+  "INDUSTRIA/26.png": {
+    "nombre": "Nutriline Agro Science",
+    "estado": "pendiente",
+    "origen": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/INDUSTRIA/26.png",
+    "nota": "Original de 80 × 50 px. Hace falta el SVG, PDF vectorial o una imagen original mayor; no se ha ampliado artificialmente."
+  },
+  "INDUSTRIA/27.svg": {
+    "nombre": "Beta Procesos",
+    "estado": "mejorado",
+    "origen": "https://www.betaprocesos.com.mx/",
+    "nota": "SVG oficial.",
+    "archivo_original": "https://www.betaprocesos.com.mx/imagenes/logo.svg"
+  },
+  "INDUSTRIA/28.png": {
+    "nombre": "Cliente industrial (nombre por confirmar)",
+    "estado": "pendiente",
+    "origen": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/INDUSTRIA/28.png",
+    "nota": "Original de 80 × 50 px. Hace falta el SVG, PDF vectorial o una imagen original mayor; no se ha ampliado artificialmente."
+  },
+  "INDUSTRIA/29.svg": {
+    "nombre": "Witzenmann",
+    "estado": "mejorado",
+    "origen": "https://www.witzenmann.com/",
+    "nota": "SVG de la identidad actual del sitio oficial; el símbolo y las letras difieren de la versión antigua.",
+    "archivo_original": "https://www.witzenmann.com/layout/assets/images/witzenmann_logo_new_noclaim.svg"
+  },
+  "INDUSTRIA/30.png": {
+    "nombre": "Asturias",
+    "estado": "pendiente",
+    "origen": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/INDUSTRIA/30.png",
+    "nota": "Original de 80 × 50 px. Hace falta el SVG, PDF vectorial o una imagen original mayor; no se ha ampliado artificialmente."
+  },
+  "INDUSTRIA/31.svg": {
+    "nombre": "thyssenkrupp",
+    "estado": "mejorado",
+    "origen": "https://commons.wikimedia.org/wiki/File:Thyssenkrupp_AG_Logo_2015.svg",
+    "nota": "Vector de la versión ya utilizada; se añadió viewBox para escalar sin recortes.",
+    "archivo_original": "https://upload.wikimedia.org/wikipedia/commons/1/13/Thyssenkrupp_AG_Logo_2015.svg"
+  },
+  "RESIDENCIAL/28.png": {
+    "nombre": "La Serena Residencial",
+    "estado": "pendiente",
+    "origen": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/RESIDENCIAL/28.png",
+    "nota": "Original de 80 × 50 px. Hace falta el SVG, PDF vectorial o una imagen original mayor; no se ha ampliado artificialmente."
+  },
+  "RESIDENCIAL/29.png": {
+    "nombre": "Senda Real",
+    "estado": "pendiente",
+    "origen": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/RESIDENCIAL/29.png",
+    "nota": "Original de 80 × 50 px. Hace falta el SVG, PDF vectorial o una imagen original mayor; no se ha ampliado artificialmente."
+  },
+  "RESIDENCIAL/30.png": {
+    "nombre": "Nueva Escondida",
+    "estado": "pendiente",
+    "origen": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/RESIDENCIAL/30.png",
+    "nota": "Original de 80 × 50 px. Hace falta el SVG, PDF vectorial o una imagen original mayor; no se ha ampliado artificialmente."
+  },
+  "RESIDENCIAL/31.png": {
+    "nombre": "Magno Residencial",
+    "estado": "pendiente",
+    "origen": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/RESIDENCIAL/31.png",
+    "nota": "Original de 80 × 50 px. Hace falta el SVG, PDF vectorial o una imagen original mayor; no se ha ampliado artificialmente."
+  },
+  "RESIDENCIAL/32.png": {
+    "nombre": "El Secreto",
+    "estado": "pendiente",
+    "origen": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/RESIDENCIAL/32.png",
+    "nota": "Original de 80 × 50 px. Hace falta el SVG, PDF vectorial o una imagen original mayor; no se ha ampliado artificialmente."
+  },
+  "RESIDENCIAL/33.jpeg": {
+    "nombre": "Fontana Residencial",
+    "estado": "mejorado",
+    "origen": "https://proyectos.perfilan.com/fontana/leads/",
+    "nota": "JPEG original de 1575 × 1575; versión sobre fondo morado.",
+    "archivo_original": "https://perfilan-resources.s3.us-east-2.amazonaws.com/fontana/cnjqtfvffpln.jpeg?147800"
+  },
+  "RESIDENCIAL/34.png": {
+    "nombre": "Hacienda La Presita",
+    "estado": "pendiente",
+    "origen": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/RESIDENCIAL/34.png",
+    "nota": "Original de 80 × 50 px. Hace falta el SVG, PDF vectorial o una imagen original mayor; no se ha ampliado artificialmente."
+  },
+  "RESIDENCIAL/35.png": {
+    "nombre": "Zäná Entorno Residencial",
+    "estado": "pendiente",
+    "origen": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/RESIDENCIAL/35.png",
+    "nota": "Original de 80 × 50 px. Hace falta el SVG, PDF vectorial o una imagen original mayor; no se ha ampliado artificialmente."
+  }
+}
