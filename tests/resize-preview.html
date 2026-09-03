@@ -46,7 +46,7 @@
     const firstGroup=doc?.querySelector('.logos-group');
     const originals=firstGroup?[...firstGroup.children].filter(item=>!item.hasAttribute('aria-hidden')):[];
     const box=viewport?.getBoundingClientRect();
-    const visible=[...doc?.querySelectorAll('.logo-item.is-loaded')||[]].filter(item=>{const r=item.getBoundingClientRect();return r.right>0&&r.left<(box?.width||0)&&r.height>0;}).length;
+    const visible=box?.width>0&&box?.height>0?[...doc.querySelectorAll('.logo-item.is-loaded')].filter(item=>{const r=item.getBoundingClientRect();return r.right>0&&r.left<box.width&&r.height>0;}).length:0;
     report.textContent=JSON.stringify({
       group:group.value,hidden:shell.hidden,frameWidth:frame.clientWidth,frameHeight:frame.clientHeight,
       viewport:viewport?{width:viewport.clientWidth,height:viewport.clientHeight}:null,
