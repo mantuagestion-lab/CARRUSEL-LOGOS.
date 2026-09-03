@@ -1,7 +1,7 @@
 'use strict';
 
 (() => {
-  const DEFAULTS = Object.freeze({ h: 144, logo: 72, gap: 18, speed: 42, bg: 'ffffff' });
+  const DEFAULTS = Object.freeze({ h: 144, logo: 72, gap: 12, speed: 42, bg: 'ffffff' });
 
   function numberInRange(value, fallback, min, max) {
     if (value === null || value === undefined || String(value).trim() === '') return fallback;
@@ -90,14 +90,24 @@
     return `<iframe src="${escapeHtml(url)}" title="Clientes de Mantua Decoración" width="100%" height="${h}" loading="eager" scrolling="no" style="display:block;width:100%;height:${h}px;border:0;overflow:hidden;"></iframe>`;
   }
 
-  function calculateLayout(width, height, count, config, reducedMotion = false) {
+  function calculateLayout(width, height, count, config, reducedMotion = false, dimensions = []) {
     if (!(width > 0 && height > 0 && count > 0)) return null;
     const gap = Math.min(config.gap, width / 10);
     const visible = width < 360 ? 2 : 3;
     const slot = width < 640 ? Math.max(1, (width - gap * (visible - 1)) / visible) : Math.min(200, config.logo * 1.8);
-    const setWidth = count * (slot + gap);
+    const logoHeight = Math.max(1, Math.min(config.logo, height - 12));
+    // El máximo adaptable no es una caja obligatoria. Cada logo reserva solo
+    // su ancho de dibujo; un PNG de 80 px no necesita una celda de 130–200 px.
+    const widths = Array.from({ length: count }, (_, index) => {
+      const size = dimensions[index];
+      const sourceWidth = Number(size?.width);
+      const sourceHeight = Number(size?.height);
+      if (!(sourceWidth > 0 && sourceHeight > 0 && Number.isFinite(sourceWidth / sourceHeight))) return slot;
+      return Math.max(1, Math.min(slot, logoHeight * sourceWidth / sourceHeight, size.vector ? Infinity : sourceWidth));
+    });
+    const setWidth = widths.reduce((sum, value) => sum + value + gap, 0);
     const repeats = reducedMotion ? 1 : Math.max(1, Math.ceil((width + 1) / setWidth));
-    return { gap, slot, logoHeight: Math.max(1, Math.min(config.logo, height - 12)), repeats, distance: setWidth * repeats };
+    return { gap, slot, widths, logoHeight, repeats, distance: setWidth * repeats };
   }
 
   function animationPhase(currentTime, duration) {
@@ -215,7 +225,11 @@
       else viewport.removeAttribute('tabindex');
       const width = viewport.clientWidth;
       const height = viewport.clientHeight;
-      const metrics = calculateLayout(width, height, originals.length, config, reduced);
+      const dimensions = originals.map(item => {
+        const img = item.querySelector('img');
+        return { width: img.naturalWidth, height: img.naturalHeight, vector: img.classList.contains('is-vector') };
+      });
+      const metrics = calculateLayout(width, height, originals.length, config, reduced, dimensions);
       hasSpace = !!metrics;
       if (!metrics) {
         // Un marco oculto puede regresar al MISMO tamaño. Debe reconstruir el
@@ -232,7 +246,10 @@
       stage.style.setProperty('--logo-height', `${metrics.logoHeight}px`);
       stage.style.setProperty('--logo-gap', `${metrics.gap}px`);
       const fragment = document.createDocumentFragment();
-      originals.forEach(item => fragment.appendChild(item));
+      originals.forEach((item, index) => {
+        item.style.setProperty('--logo-width', `${metrics.widths[index]}px`);
+        fragment.appendChild(item);
+      });
       for (let repeat = 1; repeat < metrics.repeats; repeat += 1) {
         originals.forEach(item => fragment.appendChild(duplicate(item)));
       }

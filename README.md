@@ -19,7 +19,7 @@ GitHub Pages permite publicar sitios de repositorios públicos con GitHub Free. 
 
 1. Abre el panel publicado y pulsa **Copiar enlace** en el grupo correspondiente. También puedes usar **Copiar código** para pegar el iframe completo.
 2. En el editor de Google Sites, abre la página y utiliza **Insertar → Insertar/Incorporar → Por URL**. Pega el enlace e inserta el carrusel. Para pegar un iframe, usa la pestaña de código.
-3. Ajusta el alto del bloque en Google Sites. El punto de partida es **144 px** de alto, **72 px** de alto máximo del logo, **18 px** de separación y **42 px/s** de movimiento.
+3. Ajusta el alto del bloque en Google Sites. El punto de partida es **144 px** de alto, **72 px** de alto máximo del logo, **12 px** de separación y **42 px/s** de movimiento.
 4. Repite con los otros grupos. Comprueba las vistas de computadora y celular y pulsa **Publicar** en Google Sites.
 
 Los enlaces apuntan a la cuenta y al repositorio nuevos. No hay que escribir el usuario dentro del código. El carrusel se adapta al espacio que le da Google Sites; no puede cambiar por sí solo el tamaño del bloque exterior.
@@ -48,7 +48,8 @@ Los nombres accesibles y la procedencia están en logos/catalogo.json; actualiza
 - Una imagen que no responde tiene tiempo límite y reintento. Las otras pueden aparecer mientras termina la carga; si falla todo, se muestra un botón para reintentar.
 - Los cambios de ancho conservan las imágenes cargadas y la posición relativa del movimiento. Si el marco se oculta o queda con ancho cero, el ciclo se recupera al reaparecer, incluso si vuelve al mismo tamaño.
 - El carrusel ocupa todo el marco, sin reservar una franja para controles. El ciclo utiliza dos grupos idénticos y un desplazamiento porcentual para evitar desfases al cambiar de tamaño.
-- En marcos menores de 360 px se reservan dos espacios para logos; entre 360 y 639 px, tres.
+- Cada logo ocupa su ancho real, sin cajas vacías a los lados. La separación predeterminada es de 12 px, como los dos márgenes de 6 px del carrusel original; los enlaces con una separación explícita conservan ese valor.
+- En teléfono se limita el ancho máximo de cada logo al espacio de dos o tres columnas, pero los logos pequeños no se estiran ni reservan toda la columna. El ciclo se repite lo necesario para que nunca quede un tramo vacío.
 - No hay botón de pausa ni pausa al pasar el cursor, tocar, hacer clic o enfocar. Solo se suspende el trabajo cuando la pestaña está oculta o el marco no tiene espacio.
 - Se respeta la preferencia de accesibilidad de movimiento reducido del dispositivo: en ese caso los logos siguen visibles y se pueden desplazar manualmente.
 - Una imagen con evento de carga y dimensiones válidas no espera a `decode()`, que puede aplazarse en marcos ocultos.

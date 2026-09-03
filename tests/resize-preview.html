@@ -52,6 +52,7 @@
       viewport:viewport?{width:viewport.clientWidth,height:viewport.clientHeight}:null,
       originals:originals.length,loaded:originals.filter(item=>item.querySelector('img')?.naturalWidth>0).length,
       visibleLogos:visible,pauseButtons:doc?.querySelectorAll('.motion-toggle').length||0,
+      logoBoxes:originals.map(item=>{const img=item.querySelector('img');return {name:img.alt,cellWidth:item.getBoundingClientRect().width,imageWidth:img.getBoundingClientRect().width};}),
       groupWidths:[...doc?.querySelectorAll('.logos-group')||[]].map(element=>element.getBoundingClientRect().width),
       animation:track?.getAnimations().map(animation=>({state:animation.playState,time:Math.round(animation.currentTime||0)}))||[],
       transform:track?frame.contentWindow.getComputedStyle(track).transform:null,

@@ -76,6 +76,7 @@ function setup(t, { width = 1100, height = 144, reduced = false } = {}) {
     cloneNode(deep) {
       const clone = new Element(this.tagName);
       clone.attributes = new Map(this.attributes);
+      clone.style.values = new Map(this.style.values);
       clone.naturalWidth = this.naturalWidth;
       clone.naturalHeight = this.naturalHeight;
       if (deep) this.children.forEach(child => clone.appendChild(child.cloneNode(true)));
@@ -164,6 +165,7 @@ test('El carrusel no tiene botón ni se pausa por puntero, clic, toque o foco', 
   assert.equal(page.requests, 3);
   assert.equal(page.group.children.filter(item => item.getAttribute('aria-hidden') !== 'true').length, 3);
   assert.equal(page.track.children.length, 2);
+  assert.ok(page.track.children.every(group => group.children.every(item => item.style.values.has('--logo-width'))));
   assert.equal(animation.keyframes[1].transform, 'translateX(-50%)');
 });
 

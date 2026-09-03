@@ -87,6 +87,48 @@ test('El cambio de ancho conserva la posición relativa de una animación en cur
   assert.ok(Math.abs(animationPhase(nextTime, nextDuration) - phase) < 1e-10);
 });
 
+test('Los PNG pequeños ocupan su ancho real, sin cajas vacías a los lados', () => {
+  const sizes = Array.from({ length: 8 }, () => ({ width: 80, height: 50, vector: false }));
+  const config = { ...DEFAULTS, gap: 18 };
+  const layout = calculateLayout(1100, 144, sizes.length, config, false, sizes);
+  assert.deepEqual(layout.widths, Array(8).fill(80));
+  assert.equal(layout.distance, 8 * (80 + 18) * 2);
+  assert.equal(layout.repeats, 2);
+});
+
+test('La separación predeterminada recupera los 12 px del carrusel anterior', () => {
+  assert.equal(DEFAULTS.gap, 12);
+  assert.equal(getParams('?gap=18').gap, 18); // Respeta enlaces ya configurados.
+});
+
+test('Logos anchos, verticales y vectoriales caben sin ampliar los PNG', () => {
+  const sizes = [
+    { width: 80, height: 50 },
+    { width: 1200, height: 300 },
+    { width: 200, height: 800 },
+    { width: 20, height: 20, vector: true }
+  ];
+  const layout = calculateLayout(320, 144, sizes.length, DEFAULTS, false, sizes);
+  assert.deepEqual(layout.widths, [80, layout.slot, 18, 72]);
+  assert.equal(layout.logoHeight, 72);
+});
+
+test('El ciclo compacto sigue cubriendo el marco con pocos logos y alturas pequeñas', () => {
+  for (const width of [240, 320, 390, 640, 1100, 1920, 3840]) {
+    for (const height of [24, 60, 144]) {
+      for (const count of [1, 2, 8, 15]) {
+        const sizes = Array.from({ length: count }, (_, i) => i % 2 ? { width: 100, height: 600 } : { width: 80, height: 50 });
+        const layout = calculateLayout(width, height, count, DEFAULTS, false, sizes);
+        assert.ok(layout.distance >= width + 1);
+        assert.equal(layout.widths.length, count);
+        assert.ok(layout.widths.every(value => value > 0 && value <= layout.slot));
+        const expected = layout.widths.reduce((sum, value) => sum + value + layout.gap, 0) * layout.repeats;
+        assert.ok(Math.abs(layout.distance - expected) < 1e-8);
+      }
+    }
+  }
+});
+
 class TestImage extends EventTarget {
   constructor(behaviors) {
     super(); this.behaviors = behaviors; this.requests = []; this.complete = false;
