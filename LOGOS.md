@@ -1,14 +1,21 @@
 # Revisión de logos de Mantua
 
-Actualización del 3 de septiembre de 2026: **31 logos; 12 con originales recuperados o mejorados, 10 vectorizados de referencias y 9 pendientes**.
+Actualización del 3 de septiembre de 2026: **31 logos; 13 con originales recuperados o mejorados, 10 vectorizados de referencias y 8 pendientes**.
 
 ## Cambios de esta entrega
+
+- DIF Apaseo el Grande se reemplazó con la nueva referencia: únicamente el símbolo familiar y el texto del frente, sin círculo, fondo morado ni escudo posterior. Las formas se reconstruyeron con geometría limpia y la leyenda se trazó desde la imagen.
+- Usabiaga pasó a SVG. Se recuperó del sitio de la marca la misma identidad aportada por Mantua, con el símbolo y la palabra completos: el PNG nuevo venía recortado arriba y abajo.
+- Los otros 29 archivos de logos, incluidos los ocho de Residencial, se conservan exactamente iguales. No cambian los enlaces, el movimiento ni los espacios del carrusel.
+- Se conservan los nombres `19-dif-apaseo-el-grande.svg` y `25-usabiaga.svg`; únicamente cambia la extensión de Usabiaga, sin duplicarlo ni alterar el orden.
+
+## Primera entrega de vectorización y nombres descriptivos
 
 - Se sustituyeron 11 logos: diez SVG reconstruidos desde las imágenes aportadas y Nutriline con trazados del sitio de la marca y los colores de su portafolio.
 - Los 23 archivos de Industria y Comercial ahora tienen nombres descriptivos. Se conserva el número inicial y el orden del carrusel.
 - Los 11 logos que ya estaban mejorados conservan exactamente sus archivos; en Industria solo cambió el nombre.
 - Los ocho archivos de Residencial conservan su nombre, contenido y orden. Su mejora se revisará después.
-- Usabiaga conserva su PNG: la captura no permite vectorizar con fidelidad las letras pequeñas. ITESBA no recibió un original nuevo.
+- En esa primera entrega, Usabiaga conservó su PNG por la baja calidad de la captura. Ya quedó resuelto con la actualización descrita arriba. ITESBA no recibió un original nuevo.
 - Los SVG nuevos no contienen imágenes incrustadas ni dependen de fuentes externas. Los diez SVG de referencia no deben confundirse con originales oficiales.
 
 ## Archivos y equivalencias
@@ -31,7 +38,7 @@ Actualización del 3 de septiembre de 2026: **31 logos; 12 con originales recupe
 | INDUSTRIA | Sigma Alimentos | [22-sigma-alimentos.gif](logos/INDUSTRIA/22-sigma-alimentos.gif) | 22.gif | Original mejorado |
 | INDUSTRIA | Bachoco | [23-bachoco.svg](logos/INDUSTRIA/23-bachoco.svg) | 23.svg | Original mejorado |
 | INDUSTRIA | Golden Foods | [24-golden-foods.png](logos/INDUSTRIA/24-golden-foods.png) | 24.png | Original mejorado |
-| INDUSTRIA | Usabiaga | [25-usabiaga.png](logos/INDUSTRIA/25-usabiaga.png) | 25.png | Pendiente |
+| INDUSTRIA | Usabiaga | [25-usabiaga.svg](logos/INDUSTRIA/25-usabiaga.svg) | 25.png / 25-usabiaga.png | Original mejorado |
 | INDUSTRIA | Nutriline Agro Science | [26-nutriline-agro-science.svg](logos/INDUSTRIA/26-nutriline-agro-science.svg) | 26.png | Original mejorado |
 | INDUSTRIA | Beta Procesos | [27-beta-procesos.svg](logos/INDUSTRIA/27-beta-procesos.svg) | 27.svg | Original mejorado |
 | INDUSTRIA | Corticon | [28-corticon.svg](logos/INDUSTRIA/28-corticon.svg) | 28.png | SVG de referencia |
@@ -53,11 +60,11 @@ Para reemplazar una imagen conserva su nombre y extensión. Si cambia la extensi
 
 - Asturias, Gentherm, Corticon, Tecnológico de Celaya, Oxford, Grimm, DIF Cortazar y La Salle se trazaron y limpiaron a partir de las imágenes aportadas.
 - Los contornos se suavizaron; no se recuperaron detalles que no existían en las referencias.
-- DIF Apaseo el Grande procede de una imagen pequeña. Se retiraron el fondo y el reflejo fotográficos, se limpiaron sus contornos y se simplificaron los brillos. Conviene preferir el original vectorial cuando esté disponible.
+- DIF Apaseo el Grande usa la nueva imagen aportada del emblema familiar morado: figuras con interiores lavanda, amarillo y azul claro, iniciales DIF y leyenda Apaseo el Grande. Solo se conserva el frente y el fondo queda transparente. Los contornos regulares se reconstruyeron para eliminar las irregularidades fotográficas; no es un archivo original de la institución.
 - UTEC conserva su composición y fondo naranja; el relieve fotográfico se representa con contornos y una sombra SVG.
 - Nutriline conserva los trazados y la composición vertical de su SVG oficial actual, con “Agro Science”, sin el lema anterior. Los colores se obtuvieron de la página 2 de su [portafolio oficial](https://nutriline-ag.com/en/upload/pdf/file-portafolio-nutriline-1-comprimido.pdf): `#191f20`, `#19a0db`, `#84c54f`.
 - Se identificaron las imágenes antes descritas como “Emblema comercial” y “Cliente industrial”: Tecnológico de Celaya y Corticon, respectivamente.
-- Usabiaga, ITESBA y siete logos de Residencial siguen pendientes de un original mejor. Fontana ya tenía un original mayor.
+- ITESBA y siete logos de Residencial siguen pendientes de un original mejor. Fontana ya tenía un original mayor. Usabiaga ya está resuelto en SVG.
 
 ## Procedencia de los originales recuperados
 
@@ -68,6 +75,7 @@ Para reemplazar una imagen conserva su nombre y extensión. Si cambia la extensi
 - **Sigma Alimentos**: [fuente](https://commons.wikimedia.org/wiki/File:Sigma_Alimentos_Logo.gif). GIF estático de 885 × 501 de la versión ya utilizada.
 - **Bachoco**: [fuente](https://bachoco.com/). SVG oficial actual, con lema.
 - **Golden Foods**: [fuente](https://www.goldenfoods.com.mx/). PNG original de 1134 × 930.
+- **Usabiaga**: [sitio de Almacenes Usabiaga](https://www.almacenesusabiaga.com/), [SVG original](https://www.almacenesusabiaga.com/wp-content/themes/almacenesusabiaga/dist/images/logo.svg). Misma identidad que la imagen aportada, con el símbolo y la palabra completos. Trazados y colores sin modificar; se retiró la declaración DTD del exportador y se añadió un margen mínimo y un título accesible.
 - **Nutriline Agro Science**: [fuente](https://nutriline-ag.com/en/img/Content/nutriline-logo-logo.svg). Trazados originales del sitio de Nutriline, conservando su composición vertical actual y Agro Science. Se restauraron los colores de la página 2 del portafolio oficial: #191f20, #19a0db y #84c54f. Esta versión no incluye el lema de la imagen antigua.
 - **Beta Procesos**: [fuente](https://www.betaprocesos.com.mx/). SVG oficial.
 - **Witzenmann**: [fuente](https://www.witzenmann.com/). SVG de la identidad actual del sitio oficial; el símbolo y las letras difieren de la versión antigua.
@@ -81,3 +89,5 @@ GKN Automotive Logo 2021: **Performance Communications**, [Wikimedia Commons](ht
 Sigma Alimentos y thyssenkrupp proceden de las páginas indicadas; los demás originales nuevos proceden de los sitios de las marcas o del historial. Las marcas pertenecen a sus respectivos titulares.
 
 Los archivos sustituidos y sus nombres anteriores permanecen recuperables en el historial de GitHub, en la [versión anterior](https://github.com/mantuagestion-lab/CARRUSEL-LOGOS./tree/43afdfcd8e7ae97f6a6c61eb606250f44af1ddb1). No se modificó el repositorio antiguo de MANTUA-DECORACION.
+
+Las versiones de DIF Apaseo el Grande y Usabiaga inmediatamente anteriores a esta sustitución están en la [publicación anterior de los logos renombrados](https://github.com/mantuagestion-lab/CARRUSEL-LOGOS./tree/6351977f15a381e6cc3c160edb70c7013119bd1c).

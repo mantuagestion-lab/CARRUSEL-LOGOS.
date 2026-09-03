@@ -3,7 +3,7 @@
     "nombre": "DIF Apaseo el Grande",
     "estado": "vectorizado",
     "origen": null,
-    "nota": "SVG vectorizado y limpiado a partir de la imagen aportada por Mantua. Contiene curvas, no una imagen incrustada. Conserva la identidad de la referencia; no es el archivo vectorial original de la marca. La referencia era pequeña: se retiraron el fondo y el reflejo fotográficos y se simplificaron los brillos. Conviene sustituirlo por el original si se obtiene.",
+    "nota": "SVG reconstruido desde la nueva referencia aportada por Mantua: símbolo familiar, DIF y Apaseo el Grande. Se conserva únicamente el frente, sin el círculo, el fondo morado ni el escudo posterior. Las figuras y las iniciales se reconstruyeron con geometría limpia; la leyenda se trazó desde la imagen. Fondo transparente, sin imágenes incrustadas ni fuentes externas. No es el archivo vectorial original de la institución.",
     "origen_anterior": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/COMERCIAL/19.png"
   },
   "COMERCIAL/20-dif-cortazar.svg": {
@@ -109,11 +109,13 @@
     "nota": "PNG original de 1134 × 930.",
     "archivo_original": "https://images.squarespace-cdn.com/content/v1/651d9435c354f02413e87e12/ba28310e-1004-4d7f-96a2-a40ff764bb82/logo_goldenfoods.png"
   },
-  "INDUSTRIA/25-usabiaga.png": {
+  "INDUSTRIA/25-usabiaga.svg": {
     "nombre": "Usabiaga",
-    "estado": "pendiente",
-    "origen": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/INDUSTRIA/25.png",
-    "nota": "Se conserva el PNG original de 80 × 50 px. La captura aportada no permite reconstruir con fidelidad las letras pequeñas; queda pendiente de un original mayor o vectorial."
+    "estado": "mejorado",
+    "origen": "https://www.almacenesusabiaga.com/",
+    "archivo_original": "https://www.almacenesusabiaga.com/wp-content/themes/almacenesusabiaga/dist/images/logo.svg",
+    "nota": "Trazados y colores originales del sitio de Almacenes Usabiaga, de la misma identidad que la nueva referencia aportada. Se conserva el símbolo y la palabra completos, incluidas las partes recortadas en el PNG. Fondo transparente; se añadió un margen mínimo y un título accesible, sin modificar los trazados ni depender de fuentes externas.",
+    "origen_anterior": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/INDUSTRIA/25.png"
   },
   "INDUSTRIA/26-nutriline-agro-science.svg": {
     "nombre": "Nutriline Agro Science",

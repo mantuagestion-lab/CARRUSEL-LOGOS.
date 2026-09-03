@@ -26,8 +26,10 @@ funcionan. Los logos pueden mejorarse después sin cambiar los enlaces.
 
 CALIDAD DE LAS IMÁGENES
 
-31 logos: 12 con originales recuperados o mejorados, 10 vectorizados
-desde las imágenes aportadas y 9 pendientes de un original mejor.
+31 logos: 13 con originales recuperados o mejorados, 10 vectorizados
+desde las imágenes aportadas y 8 pendientes de un original mejor.
+DIF Apaseo el Grande ya tiene el frente de la nueva referencia, sin fondo.
+Usabiaga ya utiliza un SVG completo de la misma identidad aportada.
 Los archivos de Empresas e Instituciones tienen nombres reconocibles;
 el número inicial conserva su orden. Residencial no se modificó.
 Consulta LOGOS.md o la revisión accesible desde el panel publicado.

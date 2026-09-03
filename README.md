@@ -26,11 +26,11 @@ Los enlaces apuntan a la cuenta y al repositorio nuevos. No hay que escribir el 
 
 ## Calidad de los logos
 
-La revisión del 3 de septiembre de 2026 contiene **31 logos: 12 con originales recuperados o mejorados, 10 vectorizados desde las imágenes aportadas y 9 pendientes de un original mejor**. Se conservaron los 11 archivos que ya estaban mejorados y se incorporaron los trazados oficiales de Nutriline con los colores de su portafolio.
+La revisión del 3 de septiembre de 2026 contiene **31 logos: 13 con originales recuperados o mejorados, 10 vectorizados desde las imágenes aportadas y 8 pendientes de un original mejor**. La última actualización cambia únicamente DIF Apaseo el Grande y Usabiaga; los otros 29 logos conservan sus archivos.
 
-Las nuevas vectorizaciones son SVG reales, sin PNG/JPG incrustados ni fuentes externas. Son reconstrucciones de las referencias, no archivos originales de las marcas. DIF Apaseo el Grande y UTEC tienen simplificaciones del fondo o los efectos fotográficos para su uso en el carrusel. Nutriline utiliza la composición vertical de su identidad oficial actual, sin el lema antiguo.
+Las nuevas vectorizaciones son SVG reales, sin PNG/JPG incrustados ni fuentes externas. Son reconstrucciones de las referencias, no archivos originales de las marcas. DIF Apaseo el Grande utiliza la nueva referencia: solo el símbolo familiar y el texto del frente, sin el marco circular ni el escudo posterior y con fondo transparente. UTEC tiene simplificaciones de sus efectos fotográficos. Nutriline utiliza la composición vertical de su identidad oficial actual, sin el lema antiguo.
 
-Usabiaga sigue pendiente porque la captura no permite reconstruir bien su letra pequeña. ITESBA no recibió un archivo nuevo. Los ocho archivos de Residencial se conservaron sin cambios para revisarlos después.
+Usabiaga ya utiliza el SVG del sitio de la marca: coincide con la identidad de la nueva referencia y conserva el símbolo y la palabra completos, sin los recortes del PNG. ITESBA no recibió un archivo nuevo. Los ocho archivos de Residencial se conservaron sin cambios para revisarlos después.
 
 La lista está en [LOGOS.md](LOGOS.md). El panel publicado también tiene **Revisar la calidad y el origen de los logos**, con imágenes y procedencia.
 
