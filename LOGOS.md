@@ -1,12 +1,20 @@
 # Revisión de logos de Mantua
 
-Actualización del 3 de septiembre de 2026: **31 logos; 13 con originales recuperados o mejorados, 10 vectorizados de referencias y 8 pendientes**.
+Actualización del 3 de septiembre de 2026: **31 logos; 13 con originales recuperados o mejorados, 17 vectorizados de referencias y 1 pendiente**.
 
 ## Cambios de esta entrega
 
+- Se sustituyeron los siete logos pendientes de Residencial por SVG reconstruidos desde las referencias aportadas: La Serena, Senda Real, Nueva Escondida, Magno Home & Towers, El Secreto, Hacienda La Presita y Zäná.
+- Zäná conserva solo el nombre y Entorno Residencial, sin fondo, textura, Próximamente ni la línea del anuncio.
+- La Serena, El Secreto y Hacienda La Presita conservan sus fondos de color. Se redujeron los márgenes exteriores de las imágenes, sin cambiar la separación ni el movimiento del carrusel.
+- Los ocho archivos residenciales ahora tienen nombres descriptivos. Fontana solo se renombró: su contenido permanece idéntico. Los 23 archivos de Industria y Comercial no se modificaron.
+- Solo ITESBA sigue pendiente de una referencia mejor. Las letras pequeñas reconstruidas y los límites de fidelidad se detallan abajo.
+
+## Entrega anterior: DIF y Usabiaga
+
 - DIF Apaseo el Grande se reemplazó con la nueva referencia: únicamente el símbolo familiar y el texto del frente, sin círculo, fondo morado ni escudo posterior. Las formas se reconstruyeron con geometría limpia y la leyenda se recompuso en contornos legibles.
 - Usabiaga pasó a SVG. Se recuperó del sitio de la marca la misma identidad aportada por Mantua, con el símbolo y la palabra completos: el PNG nuevo venía recortado arriba y abajo.
-- Los otros 29 archivos de logos, incluidos los ocho de Residencial, se conservan exactamente iguales. No cambian los enlaces, el movimiento ni los espacios del carrusel.
+- En esa entrega, los otros 29 archivos de logos se conservaron. Residencial se actualizó después, en la entrega descrita arriba.
 - Se conservan los nombres `19-dif-apaseo-el-grande.svg` y `25-usabiaga.svg`; únicamente cambia la extensión de Usabiaga, sin duplicarlo ni alterar el orden.
 
 ## Primera entrega de vectorización y nombres descriptivos
@@ -14,7 +22,7 @@ Actualización del 3 de septiembre de 2026: **31 logos; 13 con originales recupe
 - Se sustituyeron 11 logos: diez SVG reconstruidos desde las imágenes aportadas y Nutriline con trazados del sitio de la marca y los colores de su portafolio.
 - Los 23 archivos de Industria y Comercial ahora tienen nombres descriptivos. Se conserva el número inicial y el orden del carrusel.
 - Los 11 logos que ya estaban mejorados conservan exactamente sus archivos; en Industria solo cambió el nombre.
-- Los ocho archivos de Residencial conservan su nombre, contenido y orden. Su mejora se revisará después.
+- En esa primera entrega, los ocho archivos de Residencial conservaron su nombre, contenido y orden. Su mejora se completó en la actualización actual.
 - En esa primera entrega, Usabiaga conservó su PNG por la baja calidad de la captura. Ya quedó resuelto con la actualización descrita arriba. ITESBA no recibió un original nuevo.
 - Los SVG nuevos no contienen imágenes incrustadas ni dependen de fuentes externas. Los diez SVG de referencia no deben confundirse con originales oficiales.
 
@@ -45,14 +53,14 @@ Actualización del 3 de septiembre de 2026: **31 logos; 13 con originales recupe
 | INDUSTRIA | Witzenmann | [29-witzenmann.svg](logos/INDUSTRIA/29-witzenmann.svg) | 29.svg | Original mejorado |
 | INDUSTRIA | Asturias | [30-asturias.svg](logos/INDUSTRIA/30-asturias.svg) | 30.png | SVG de referencia |
 | INDUSTRIA | thyssenkrupp | [31-thyssenkrupp.svg](logos/INDUSTRIA/31-thyssenkrupp.svg) | 31.svg | Original mejorado |
-| RESIDENCIAL | La Serena Residencial | [28.png](logos/RESIDENCIAL/28.png) | Sin cambio | Pendiente |
-| RESIDENCIAL | Senda Real | [29.png](logos/RESIDENCIAL/29.png) | Sin cambio | Pendiente |
-| RESIDENCIAL | Nueva Escondida | [30.png](logos/RESIDENCIAL/30.png) | Sin cambio | Pendiente |
-| RESIDENCIAL | Magno Residencial | [31.png](logos/RESIDENCIAL/31.png) | Sin cambio | Pendiente |
-| RESIDENCIAL | El Secreto | [32.png](logos/RESIDENCIAL/32.png) | Sin cambio | Pendiente |
-| RESIDENCIAL | Fontana Residencial | [33.jpeg](logos/RESIDENCIAL/33.jpeg) | Sin cambio | Original mejorado |
-| RESIDENCIAL | Hacienda La Presita | [34.png](logos/RESIDENCIAL/34.png) | Sin cambio | Pendiente |
-| RESIDENCIAL | Zäná Entorno Residencial | [35.png](logos/RESIDENCIAL/35.png) | Sin cambio | Pendiente |
+| RESIDENCIAL | La Serena Residencial | [28-la-serena-residencial.svg](logos/RESIDENCIAL/28-la-serena-residencial.svg) | 28.png | SVG de referencia |
+| RESIDENCIAL | Senda Real | [29-senda-real.svg](logos/RESIDENCIAL/29-senda-real.svg) | 29.png | SVG de referencia |
+| RESIDENCIAL | Nueva Escondida | [30-nueva-escondida.svg](logos/RESIDENCIAL/30-nueva-escondida.svg) | 30.png | SVG de referencia |
+| RESIDENCIAL | Magno Home & Towers | [31-magno-home-towers.svg](logos/RESIDENCIAL/31-magno-home-towers.svg) | 31.png | SVG de referencia |
+| RESIDENCIAL | El Secreto | [32-el-secreto.svg](logos/RESIDENCIAL/32-el-secreto.svg) | 32.png | SVG de referencia |
+| RESIDENCIAL | Fontana Residencial | [33-fontana-residencial.jpeg](logos/RESIDENCIAL/33-fontana-residencial.jpeg) | 33.jpeg | Original mejorado, solo renombrado |
+| RESIDENCIAL | Hacienda La Presita | [34-hacienda-la-presita.svg](logos/RESIDENCIAL/34-hacienda-la-presita.svg) | 34.png | SVG de referencia |
+| RESIDENCIAL | Zäná Entorno Residencial | [35-zana-entorno-residencial.svg](logos/RESIDENCIAL/35-zana-entorno-residencial.svg) | 35.png | SVG de referencia |
 
 Para reemplazar una imagen conserva su nombre y extensión. Si cambia la extensión, elimina la imagen anterior para no duplicar la marca y actualiza su clave en `logos/catalogo.json`. Las rutas públicas del carrusel no cambian.
 
@@ -64,7 +72,10 @@ Para reemplazar una imagen conserva su nombre y extensión. Si cambia la extensi
 - UTEC conserva su composición y fondo naranja; el relieve fotográfico se representa con contornos y una sombra SVG.
 - Nutriline conserva los trazados y la composición vertical de su SVG oficial actual, con “Agro Science”, sin el lema anterior. Los colores se obtuvieron de la página 2 de su [portafolio oficial](https://nutriline-ag.com/en/upload/pdf/file-portafolio-nutriline-1-comprimido.pdf): `#191f20`, `#19a0db`, `#84c54f`.
 - Se identificaron las imágenes antes descritas como “Emblema comercial” y “Cliente industrial”: Tecnológico de Celaya y Corticon, respectivamente.
-- ITESBA y siete logos de Residencial siguen pendientes de un original mejor. Fontana ya tenía un original mayor. Usabiaga ya está resuelto en SVG.
+- Las siete nuevas vectorizaciones de Residencial son reconstrucciones, no archivos oficiales. Senda Real y Zäná se trazaron desde referencias mayores; La Serena, Nueva Escondida, Magno, El Secreto y La Presita proceden de imágenes de 447 × 447 px. La vectorización no recupera detalles ausentes en esas referencias.
+- Las leyendas Club Residencial (Nueva Escondida), Home & Towers (Magno) y Lotes Residenciales & Villas (La Presita) se recompusieron para evitar letras fragmentadas: Nimbus Sans Regular para la primera y Nimbus Roman Regular para las otras dos, siempre convertidas en contornos. Las tipografías y los detalles pequeños son aproximaciones.
+- Zäná conserva los acentos, el color y la leyenda Entorno Residencial. No se incluyeron el fondo fotográfico, Próximamente ni su línea. La Serena, El Secreto y La Presita mantienen sus fondos para conservar el contraste de las letras blancas.
+- ITESBA sigue pendiente de un original mejor. Fontana ya tenía un original mayor y conserva exactamente el mismo JPEG, solo renombrado. Usabiaga ya está resuelto en SVG.
 
 ## Procedencia de los originales recuperados
 
@@ -91,3 +102,5 @@ Sigma Alimentos y thyssenkrupp proceden de las páginas indicadas; los demás or
 Los archivos sustituidos y sus nombres anteriores permanecen recuperables en el historial de GitHub, en la [versión anterior](https://github.com/mantuagestion-lab/CARRUSEL-LOGOS./tree/43afdfcd8e7ae97f6a6c61eb606250f44af1ddb1). No se modificó el repositorio antiguo de MANTUA-DECORACION.
 
 Las versiones de DIF Apaseo el Grande y Usabiaga inmediatamente anteriores a esta sustitución están en la [publicación anterior de los logos renombrados](https://github.com/mantuagestion-lab/CARRUSEL-LOGOS./tree/6351977f15a381e6cc3c160edb70c7013119bd1c).
+
+Los archivos de Residencial anteriores a esta entrega están en la [versión previa a la actualización residencial](https://github.com/mantuagestion-lab/CARRUSEL-LOGOS./tree/d70fd8076fe3e1237dbfd3d55db1f6d171df0993).

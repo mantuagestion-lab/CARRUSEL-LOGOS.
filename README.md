@@ -26,11 +26,11 @@ Los enlaces apuntan a la cuenta y al repositorio nuevos. No hay que escribir el 
 
 ## Calidad de los logos
 
-La revisión del 3 de septiembre de 2026 contiene **31 logos: 13 con originales recuperados o mejorados, 10 vectorizados desde las imágenes aportadas y 8 pendientes de un original mejor**. La última actualización cambia únicamente DIF Apaseo el Grande y Usabiaga; los otros 29 logos conservan sus archivos.
+La revisión del 3 de septiembre de 2026 contiene **31 logos: 13 con originales recuperados o mejorados, 17 vectorizados desde las imágenes aportadas y 1 pendiente de un original mejor**. La última actualización sustituye siete logos de Residencial; Fontana conserva su imagen con un nombre descriptivo. Los 23 logos de Industria y Comercial no cambian.
 
 Las nuevas vectorizaciones son SVG reales, sin PNG/JPG incrustados ni fuentes externas. Son reconstrucciones de las referencias, no archivos originales de las marcas. DIF Apaseo el Grande utiliza la nueva referencia: solo el símbolo familiar y el texto del frente, sin el marco circular ni el escudo posterior y con fondo transparente. UTEC tiene simplificaciones de sus efectos fotográficos. Nutriline utiliza la composición vertical de su identidad oficial actual, sin el lema antiguo.
 
-Usabiaga ya utiliza el SVG del sitio de la marca: coincide con la identidad de la nueva referencia y conserva el símbolo y la palabra completos, sin los recortes del PNG. ITESBA no recibió un archivo nuevo. Los ocho archivos de Residencial se conservaron sin cambios para revisarlos después.
+Usabiaga ya utiliza el SVG del sitio de la marca: coincide con la identidad de la nueva referencia y conserva el símbolo y la palabra completos, sin los recortes del PNG. Solo ITESBA sigue pendiente de un archivo nuevo. Residencial utiliza las siete referencias nuevas; Zäná queda transparente, sin textura ni Próximamente. La Serena, El Secreto y La Presita conservan sus fondos de color. Algunas leyendas pequeñas se recompusieron con tipografías de apoyo convertidas en curvas; su fidelidad se documenta en el catálogo.
 
 La lista está en [LOGOS.md](LOGOS.md). El panel publicado también tiene **Revisar la calidad y el origen de los logos**, con imágenes y procedencia.
 
@@ -40,7 +40,7 @@ La lista está en [LOGOS.md](LOGOS.md). El panel publicado también tiene **Revi
 
 ## Cambiar imágenes después
 
-Conserva las carpetas logos/INDUSTRIA, logos/COMERCIAL y logos/RESIDENCIAL. Los 23 archivos de Industria y Comercial ahora tienen nombres reconocibles, por ejemplo `18-gentherm.svg`, `19-honda.png` y `26-la-salle-leon.svg`. El prefijo numérico conserva el orden anterior; los archivos se ordenan por nombre. Residencial conserva sus nombres actuales hasta su revisión.
+Conserva las carpetas logos/INDUSTRIA, logos/COMERCIAL y logos/RESIDENCIAL. Los 31 archivos tienen nombres reconocibles, por ejemplo `18-gentherm.svg`, `19-honda.png` y `35-zana-entorno-residencial.svg`. El prefijo numérico conserva el orden anterior; los archivos se ordenan por nombre.
 
 Puedes añadir, sustituir o quitar archivos PNG, JPG, WebP, SVG o GIF estáticos. Para reemplazar un logo, usa el mismo nombre y extensión. Al sustituir un PNG por un SVG, elimina el PNG anterior para que la marca no aparezca dos veces, y actualiza su clave en `logos/catalogo.json`. La tabla de equivalencias está en [LOGOS.md](LOGOS.md).
 

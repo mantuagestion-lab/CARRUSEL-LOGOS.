@@ -32,7 +32,7 @@ article{padding:18px;background:white;border:1px solid #ddd;border-radius:12px}.
 .image{height:125px;display:flex;align-items:center;justify-content:center}.image img{max-width:220px;max-height:100px;width:auto;height:auto}
 .status{font-weight:bold}article p,article a{font-size:14px}footer{padding-top:28px;font-size:14px}
 </style><main><a href="./">Volver a los carruseles</a><h1>Origen y calidad de los logos</h1>
-<p>Revisión del 3 de septiembre de 2026. Los SVG vectorizados son reconstrucciones de las referencias aportadas, no los archivos originales de las marcas. Los logos pendientes todavía necesitan un original de buena calidad. Residencial se conserva para una revisión posterior.</p>
+<p>Revisión del 3 de septiembre de 2026. Los SVG vectorizados son reconstrucciones de las referencias aportadas, no los archivos originales de las marcas. Residencial ya incluye las siete referencias nuevas; Zäná queda sin fondo y Fontana conserva su imagen. Solo ITESBA sigue pendiente de un original de buena calidad.</p>
 <div class="grid">''' + ''.join(cards) + '''</div><footer>
 <p>Las marcas pertenecen a sus respectivos titulares. Esta página documenta los archivos utilizados en los carruseles de Mantua.</p>
 <p>GKN Automotive Logo 2021: Performance Communications, obtenido de <a href="https://commons.wikimedia.org/wiki/File:GKN_Automotive_Logo_2021.png">Wikimedia Commons</a>, bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. Archivo sin modificar; ajustado únicamente al espacio de visualización.</p>

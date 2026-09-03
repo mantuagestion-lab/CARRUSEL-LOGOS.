@@ -160,53 +160,60 @@
     "nota": "Vector de la versión ya utilizada; se añadió viewBox para escalar sin recortes.",
     "archivo_original": "https://upload.wikimedia.org/wikipedia/commons/1/13/Thyssenkrupp_AG_Logo_2015.svg"
   },
-  "RESIDENCIAL/28.png": {
+  "RESIDENCIAL/28-la-serena-residencial.svg": {
     "nombre": "La Serena Residencial",
-    "estado": "pendiente",
-    "origen": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/RESIDENCIAL/28.png",
-    "nota": "Original de 80 × 50 px. Hace falta el SVG, PDF vectorial o una imagen original mayor; no se ha ampliado artificialmente."
+    "estado": "vectorizado",
+    "origen": null,
+    "nota": "SVG reconstruido con curvas desde la imagen aportada por Mantua. Conserva el fondo morado, el símbolo amarillo y las letras blancas, con menos margen exterior. No es el archivo vectorial original de la marca.",
+    "origen_anterior": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/RESIDENCIAL/28.png"
   },
-  "RESIDENCIAL/29.png": {
+  "RESIDENCIAL/29-senda-real.svg": {
     "nombre": "Senda Real",
-    "estado": "pendiente",
-    "origen": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/RESIDENCIAL/29.png",
-    "nota": "Original de 80 × 50 px. Hace falta el SVG, PDF vectorial o una imagen original mayor; no se ha ampliado artificialmente."
+    "estado": "vectorizado",
+    "origen": null,
+    "nota": "SVG trazado desde la referencia de 1000 × 1000 px aportada por Mantua. Conserva los dos verdes y la transparencia; se retiraron los márgenes vacíos. No contiene imágenes incrustadas ni fuentes externas y no es el SVG original de la marca.",
+    "origen_anterior": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/RESIDENCIAL/29.png"
   },
-  "RESIDENCIAL/30.png": {
+  "RESIDENCIAL/30-nueva-escondida.svg": {
     "nombre": "Nueva Escondida",
-    "estado": "pendiente",
-    "origen": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/RESIDENCIAL/30.png",
-    "nota": "Original de 80 × 50 px. Hace falta el SVG, PDF vectorial o una imagen original mayor; no se ha ampliado artificialmente."
+    "estado": "vectorizado",
+    "origen": null,
+    "nota": "Símbolo y nombre trazados desde la imagen aportada, sin las líneas decorativas del fondo. Club Residencial se recompuso con Nimbus Sans Regular convertido en curvas para evitar letras rotas. Tipografía de la leyenda y detalles aproximados; no es el archivo original de la marca.",
+    "origen_anterior": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/RESIDENCIAL/30.png"
   },
-  "RESIDENCIAL/31.png": {
-    "nombre": "Magno Residencial",
-    "estado": "pendiente",
-    "origen": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/RESIDENCIAL/31.png",
-    "nota": "Original de 80 × 50 px. Hace falta el SVG, PDF vectorial o una imagen original mayor; no se ha ampliado artificialmente."
+  "RESIDENCIAL/31-magno-home-towers.svg": {
+    "nombre": "Magno Home & Towers",
+    "estado": "vectorizado",
+    "origen": null,
+    "nota": "Se utiliza la versión Magno Home & Towers aportada por Mantua. Símbolo y nombre trazados en SVG transparente; leyenda recompuesta con Nimbus Roman Regular en curvas, manteniendo proporciones aproximadas. No es el archivo vectorial ni la tipografía originales de la marca.",
+    "origen_anterior": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/RESIDENCIAL/31.png"
   },
-  "RESIDENCIAL/32.png": {
+  "RESIDENCIAL/32-el-secreto.svg": {
     "nombre": "El Secreto",
-    "estado": "pendiente",
-    "origen": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/RESIDENCIAL/32.png",
-    "nota": "Original de 80 × 50 px. Hace falta el SVG, PDF vectorial o una imagen original mayor; no se ha ampliado artificialmente."
+    "estado": "vectorizado",
+    "origen": null,
+    "nota": "SVG reconstruido desde la imagen aportada, con el fondo azul oscuro y las letras blancas. Se conservan llave y hojas verdes, reduciendo el margen exterior. Contornos aproximados; no es el archivo vectorial original de la marca.",
+    "origen_anterior": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/RESIDENCIAL/32.png"
   },
-  "RESIDENCIAL/33.jpeg": {
+  "RESIDENCIAL/33-fontana-residencial.jpeg": {
     "nombre": "Fontana Residencial",
     "estado": "mejorado",
     "origen": "https://proyectos.perfilan.com/fontana/leads/",
     "nota": "JPEG original de 1575 × 1575; versión sobre fondo morado.",
     "archivo_original": "https://perfilan-resources.s3.us-east-2.amazonaws.com/fontana/cnjqtfvffpln.jpeg?147800"
   },
-  "RESIDENCIAL/34.png": {
+  "RESIDENCIAL/34-hacienda-la-presita.svg": {
     "nombre": "Hacienda La Presita",
-    "estado": "pendiente",
-    "origen": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/RESIDENCIAL/34.png",
-    "nota": "Original de 80 × 50 px. Hace falta el SVG, PDF vectorial o una imagen original mayor; no se ha ampliado artificialmente."
+    "estado": "vectorizado",
+    "origen": null,
+    "nota": "Torre y nombre trazados desde la referencia aportada, conservando letras blancas y fondo verde. Lotes Residenciales & Villas se recompuso con Nimbus Roman Regular convertido en curvas. El dibujo y la tipografía pequeña son aproximaciones, no los originales de la marca.",
+    "origen_anterior": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/RESIDENCIAL/34.png"
   },
-  "RESIDENCIAL/35.png": {
+  "RESIDENCIAL/35-zana-entorno-residencial.svg": {
     "nombre": "Zäná Entorno Residencial",
-    "estado": "pendiente",
-    "origen": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/RESIDENCIAL/35.png",
-    "nota": "Original de 80 × 50 px. Hace falta el SVG, PDF vectorial o una imagen original mayor; no se ha ampliado artificialmente."
+    "estado": "vectorizado",
+    "origen": null,
+    "nota": "SVG transparente trazado de la referencia aportada: únicamente Zäná y Entorno Residencial. Se quitaron la textura, Próximamente y su línea; se conservaron los acentos y el color del logo. No contiene una imagen incrustada ni es el archivo original de la marca.",
+    "origen_anterior": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/RESIDENCIAL/35.png"
   }
 }
