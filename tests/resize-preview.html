@@ -28,7 +28,8 @@
   const frame=document.querySelector('#frame');
   const group=document.querySelector('#group');
   const report=document.querySelector('#report');
-  function reload(){frame.src='../?mode=embed&grupo='+group.value+'&h=144&logo=72&gap=18&speed=42&bg=ffffff';}
+  // A fresh URL keeps a pre-deployment frame from masking newly published assets.
+  function reload(){frame.src='../?mode=embed&grupo='+group.value+'&h=144&logo=72&gap=18&speed=42&bg=ffffff&_test='+Date.now();}
   document.querySelectorAll('[data-width]').forEach(button=>button.onclick=()=>{shell.hidden=false;shell.style.width=button.dataset.width+'px';});
   document.querySelector('#hide').onclick=()=>{shell.hidden=true;};
   document.querySelector('#show').onclick=()=>{shell.hidden=false;};
