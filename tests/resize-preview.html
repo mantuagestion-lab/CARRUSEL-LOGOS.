@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Prueba de tamaño del carrusel Mantua</title>
+<style>
+  body{font:16px Arial,sans-serif;margin:24px;color:#222;background:#f3f3f3}
+  h1{font-size:22px} .controls{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+  button,select{font:inherit;padding:8px 12px} #shell{max-width:100%;background:#fff;border:1px solid #888}
+  iframe{display:block;border:0;width:100%;height:144px} pre{white-space:pre-wrap;font:13px monospace;background:#fff;padding:14px}
+</style>
+<h1>Prueba de tamaño del carrusel Mantua</h1>
+<p>Comprobación de tamaño: los botones cambian el marco, no los archivos del carrusel. Estos controles no aparecen dentro del carrusel que se inserta en Google Sites.</p>
+<label>Grupo <select id="group"><option>INDUSTRIA</option><option>COMERCIAL</option><option>RESIDENCIAL</option></select></label>
+<div class="controls">
+  <button data-width="1100">Computadora 1100</button><button data-width="390">Teléfono 390</button>
+  <button data-width="320">Teléfono 320</button><button data-width="240">Marco 240</button>
+  <button id="hide">Ocultar marco</button><button id="show">Mostrar marco</button>
+  <button id="collapse">Ancho cero</button><button id="zero-height">Alto cero</button><button id="short">Alto 60</button><button id="normal">Alto 144</button>
+  <button id="reload">Recargar marco</button><button id="hidden-start">Cargar oculto</button>
+</div>
+<div id="shell" style="width:1100px"><iframe id="frame" title="Carrusel de prueba" loading="eager"></iframe></div>
+<h2>Estado visible del marco</h2>
+<pre id="report" role="status">Cargando prueba…</pre>
+<script>
+  const shell=document.querySelector('#shell');
+  const frame=document.querySelector('#frame');
+  const group=document.querySelector('#group');
+  const report=document.querySelector('#report');
+  function reload(){frame.src='../?mode=embed&grupo='+group.value+'&h=144&logo=72&gap=18&speed=42&bg=ffffff';}
+  document.querySelectorAll('[data-width]').forEach(button=>button.onclick=()=>{shell.hidden=false;shell.style.width=button.dataset.width+'px';});
+  document.querySelector('#hide').onclick=()=>{shell.hidden=true;};
+  document.querySelector('#show').onclick=()=>{shell.hidden=false;};
+  document.querySelector('#collapse').onclick=()=>{shell.style.width='0px';};
+  document.querySelector('#zero-height').onclick=()=>{frame.style.height='0px';};
+  document.querySelector('#short').onclick=()=>{frame.style.height='60px';};
+  document.querySelector('#normal').onclick=()=>{frame.style.height='144px';};
+  document.querySelector('#reload').onclick=reload;
+  document.querySelector('#hidden-start').onclick=()=>{shell.hidden=true;reload();};
+  group.onchange=reload;
+  function update(){
+    const doc=frame.contentDocument;
+    const track=doc?.querySelector('.logos-track');
+    const viewport=doc?.querySelector('.logos-viewport');
+    const firstGroup=doc?.querySelector('.logos-group');
+    const originals=firstGroup?[...firstGroup.children].filter(item=>!item.hasAttribute('aria-hidden')):[];
+    const box=viewport?.getBoundingClientRect();
+    const visible=[...doc?.querySelectorAll('.logo-item.is-loaded')||[]].filter(item=>{const r=item.getBoundingClientRect();return r.right>0&&r.left<(box?.width||0)&&r.height>0;}).length;
+    report.textContent=JSON.stringify({
+      group:group.value,hidden:shell.hidden,frameWidth:frame.clientWidth,frameHeight:frame.clientHeight,
+      viewport:viewport?{width:viewport.clientWidth,height:viewport.clientHeight}:null,
+      originals:originals.length,loaded:originals.filter(item=>item.querySelector('img')?.naturalWidth>0).length,
+      visibleLogos:visible,pauseButtons:doc?.querySelectorAll('.motion-toggle').length||0,
+      groupWidths:[...doc?.querySelectorAll('.logos-group')||[]].map(element=>element.getBoundingClientRect().width),
+      animation:track?.getAnimations().map(animation=>({state:animation.playState,time:Math.round(animation.currentTime||0)}))||[],
+      transform:track?frame.contentWindow.getComputedStyle(track).transform:null,
+      status:doc?.querySelector('.carousel-status:not([hidden])')?.textContent||doc?.querySelector('.empty-state')?.textContent||''
+    },null,2);
+  }
+  frame.addEventListener('load',update);setInterval(update,250);reload();
+</script>
+</html>

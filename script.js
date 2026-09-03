@@ -87,7 +87,7 @@
 
   function buildIframeCode(url, height) {
     const h = normalizeConfig({ h: height }).h;
-    return `<iframe src="${escapeHtml(url)}" title="Clientes de Mantua Decoración" width="100%" height="${h}" loading="lazy" scrolling="no" style="display:block;width:100%;height:${h}px;border:0;overflow:hidden;"></iframe>`;
+    return `<iframe src="${escapeHtml(url)}" title="Clientes de Mantua Decoración" width="100%" height="${h}" loading="eager" scrolling="no" style="display:block;width:100%;height:${h}px;border:0;overflow:hidden;"></iframe>`;
   }
 
   function calculateLayout(width, height, count, config, reducedMotion = false) {
@@ -119,8 +119,9 @@
       };
       const loaded = () => {
         if (!img.naturalWidth || !img.naturalHeight) return finish(false);
-        // Algunos navegadores rechazan decode() para SVG válidos: el evento load sigue siendo válido.
-        Promise.resolve().then(() => typeof img.decode === 'function' ? img.decode() : undefined).catch(() => {}).then(() => finish(true));
+        // load + dimensiones válidas bastan. decode() puede quedar pendiente si
+        // Google Sites oculta el marco al cambiar de vista; no es un fallo de red.
+        finish(true);
       };
       const failed = () => finish(false);
       if (signal?.aborted) return finish(false);
@@ -174,23 +175,18 @@
     let duration = 0;
     let layoutKey = '';
     let originals = [];
-    let manualPaused = false;
-    let hovered = false;
-    let focused = false;
-    let visible = true;
     let hasSpace = false;
     const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
     const stage = document.createElement('section');
     stage.className = 'embed-stage';
     stage.setAttribute('aria-label', `Clientes de ${titleCase(groupName)}`);
-    stage.innerHTML = '<div class="logos-viewport" tabindex="0"><div class="logos-track"><div class="logos-group" role="list"></div></div></div><p class="carousel-status" role="status">Cargando logos…</p><button class="motion-toggle" type="button" aria-pressed="false" aria-label="Pausar movimiento de los logos" hidden>Pausar</button>';
+    stage.innerHTML = '<div class="logos-viewport"><div class="logos-track"><div class="logos-group" role="list"></div></div></div><p class="carousel-status" role="status">Cargando logos…</p>';
     const viewport = stage.querySelector('.logos-viewport');
     viewport.setAttribute('role', 'group');
     viewport.setAttribute('aria-label', 'Logos de clientes');
     const track = stage.querySelector('.logos-track');
     const group = stage.querySelector('.logos-group');
     const status = stage.querySelector('.carousel-status');
-    const toggle = stage.querySelector('.motion-toggle');
     target.replaceChildren(stage);
     target.setAttribute('aria-busy', 'true');
 
@@ -200,7 +196,7 @@
     };
     function syncPlayback() {
       if (!animation) return;
-      if (manualPaused || hovered || focused || !visible || document.hidden || !hasSpace) animation.pause();
+      if (document.hidden || !hasSpace) animation.pause();
       else animation.play();
     }
     function duplicate(element) {
@@ -214,11 +210,20 @@
       if (destroyed || !ready) return;
       const reduced = motionPreference.matches || typeof track.animate !== 'function';
       stage.classList.toggle('is-static', reduced);
+      // Solo se permite desplazar con teclado si el sistema solicita menos movimiento.
+      if (reduced) viewport.setAttribute('tabindex', '0');
+      else viewport.removeAttribute('tabindex');
       const width = viewport.clientWidth;
       const height = viewport.clientHeight;
       const metrics = calculateLayout(width, height, originals.length, config, reduced);
       hasSpace = !!metrics;
-      if (!metrics) { syncPlayback(); return; }
+      if (!metrics) {
+        // Un marco oculto puede regresar al MISMO tamaño. Debe reconstruir el
+        // ciclo al reaparecer, no conservar un ajuste marcado como terminado.
+        layoutKey = '';
+        syncPlayback();
+        return;
+      }
       const nextKey = `${width}:${height}:${reduced}`;
       if (nextKey === layoutKey) { syncPlayback(); return; }
       layoutKey = nextKey;
@@ -235,14 +240,13 @@
       track.replaceChildren(group);
       animation?.cancel();
       animation = null;
-      toggle.hidden = reduced;
       track.classList.toggle('is-animated', !reduced);
       if (reduced) return;
-      const distance = group.getBoundingClientRect().width;
-      if (!(distance > 0)) return;
       track.appendChild(duplicate(group));
-      duration = distance / config.speed * 1000;
-      animation = track.animate([{ transform: 'translateX(0)' }, { transform: `translateX(-${distance}px)` }], { duration, iterations: Infinity, easing: 'linear' });
+      duration = metrics.distance / config.speed * 1000;
+      // Hay dos grupos idénticos: media pista es exactamente un ciclo, incluso
+      // con medidas fraccionarias o una vista previa escalada por Google Sites.
+      animation = track.animate([{ transform: 'translateX(0)' }, { transform: 'translateX(-50%)' }], { duration, iterations: Infinity, easing: 'linear' });
       // Mantiene la posición relativa al cambiar de ancho; nunca vuelve a solicitar las imágenes.
       animation.currentTime = phase * duration;
       syncPlayback();
@@ -251,32 +255,27 @@
       if (!destroyed && !layoutFrame) layoutFrame = requestAnimationFrame(layout);
     }
 
-    on(toggle, 'click', () => {
-      manualPaused = !manualPaused;
-      toggle.textContent = manualPaused ? 'Reanudar' : 'Pausar';
-      toggle.setAttribute('aria-pressed', String(manualPaused));
-      toggle.setAttribute('aria-label', manualPaused ? 'Reanudar movimiento de los logos' : 'Pausar movimiento de los logos');
+    function restoreLayout() {
+      layoutKey = '';
+      scheduleLayout();
+    }
+    on(document, 'visibilitychange', () => {
+      if (!document.hidden) restoreLayout();
       syncPlayback();
     });
-    on(viewport, 'pointerenter', event => { hovered = event.pointerType === 'mouse'; syncPlayback(); });
-    on(viewport, 'pointerleave', () => { hovered = false; syncPlayback(); });
-    on(viewport, 'focusin', () => { focused = true; syncPlayback(); });
-    on(viewport, 'focusout', event => { focused = viewport.contains(event.relatedTarget); syncPlayback(); });
-    on(document, 'visibilitychange', syncPlayback);
+    on(window, 'pageshow', restoreLayout);
+    on(window, 'orientationchange', restoreLayout);
+    on(window, 'resize', scheduleLayout);
+    if (window.visualViewport) on(window.visualViewport, 'resize', scheduleLayout);
     if (motionPreference.addEventListener) on(motionPreference, 'change', scheduleLayout);
     else {
       motionPreference.addListener(scheduleLayout);
       cleanup.push(() => motionPreference.removeListener(scheduleLayout));
     }
-    // Una sola ruta de ajuste. Nunca reconstruye el carrusel ni vuelve a cargar su catálogo.
+    // Todos los avisos se agrupan en un solo ajuste por cuadro, sin pedir los logos otra vez.
     if (typeof ResizeObserver !== 'undefined') {
       const observer = new ResizeObserver(scheduleLayout);
       observer.observe(viewport);
-      cleanup.push(() => observer.disconnect());
-    } else on(window, 'resize', scheduleLayout);
-    if (typeof IntersectionObserver !== 'undefined') {
-      const observer = new IntersectionObserver(entries => { visible = entries[0].isIntersecting; syncPlayback(); });
-      observer.observe(stage);
       cleanup.push(() => observer.disconnect());
     }
 
@@ -335,6 +334,7 @@
       card.innerHTML = `<div class="carousel-card-head"><h2 class="carousel-card-title">${escapeHtml(titleCase(name))}</h2><span class="carousel-card-count">${logos.length} logos</span></div><div class="preview-shell"><iframe class="embed-frame" title="Vista previa: ${escapeHtml(titleCase(name))}" loading="lazy" scrolling="no"></iframe></div><div class="controls-grid">${controls.map(([key, label, min, max]) => `<div class="control-box"><label for="setting-${index}-${key}">${label}</label><input id="setting-${index}-${key}" data-role="${key}" type="number" min="${min}" max="${max}" value="${DEFAULTS[key]}"></div>`).join('')}</div><label class="output-label" for="link-${index}">Enlace para Google Sites</label><div class="output-row"><input id="link-${index}" data-role="link" type="url" readonly><button type="button" class="copy-btn" data-copy="link">Copiar enlace</button></div><label class="output-label" for="code-${index}">Código para insertar</label><div class="output-row"><textarea id="code-${index}" data-role="iframe" rows="3" readonly spellcheck="false"></textarea><button type="button" class="copy-btn" data-copy="iframe">Copiar código</button></div><a class="open-btn" target="_blank" rel="noopener" data-open>Abrir carrusel</a><p class="copy-status" role="status"></p>`;
       grid.appendChild(card);
       const frame = card.querySelector('iframe');
+      frame.loading = 'eager';
       const link = card.querySelector('[data-role="link"]');
       const code = card.querySelector('[data-role="iframe"]');
       let refreshTimer;
@@ -406,7 +406,7 @@
   }
 
   if (typeof module !== 'undefined' && module.exports) {
-    module.exports = { DEFAULTS, normalizeConfig, getParams, normalizeManifest, loadManifest, buildEmbedUrl, buildIframeCode, calculateLayout, animationPhase, loadLogo };
+    module.exports = { DEFAULTS, normalizeConfig, getParams, normalizeManifest, loadManifest, buildEmbedUrl, buildIframeCode, calculateLayout, animationPhase, loadLogo, createCarousel };
   } else if (typeof document !== 'undefined') {
     if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init, { once: true });
     else init();

@@ -14,6 +14,9 @@ output.mkdir()
 for name in ('index.html', 'script.js', 'style.css', 'manifest.json'):
     shutil.copy2(ROOT / name, output / name)
 shutil.copytree(ROOT / 'logos', output / 'logos', ignore=shutil.ignore_patterns('.*'))
+# Página de comprobación independiente; nunca se incluye dentro de los carruseles.
+(output / 'tests').mkdir()
+shutil.copy2(ROOT / 'tests' / 'resize-preview.html', output / 'tests' / 'resize-preview.html')
 
 # El HTML publicado incluye estilo, lógica y catálogo en una sola respuesta.
 # Las fuentes separadas se conservan para mantenimiento y compatibilidad.

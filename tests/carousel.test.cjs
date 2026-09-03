@@ -21,6 +21,7 @@ test('El alto del iframe es el solicitado, sin forzar 600 px ni 100vh', () => {
   const code = buildIframeCode(url, 144);
   assert.match(code, /height="144"/);
   assert.match(code, /height:144px/);
+  assert.match(code, /loading="eager"/);
   assert.doesNotMatch(code, /600|100vh|min-height/);
   assert.equal(new URL(url).origin, 'https://cuenta-nueva.github.io');
   assert.equal(new URL(url).pathname, '/CARRUSEL-MANTUA/');
@@ -146,8 +147,16 @@ test('Cancelar una carga pendiente la termina y evita nuevos intentos', async ()
   assert.equal(image.requests.length, 1);
 });
 
-test('Un decodificador de imagen que no responde también tiene tiempo límite', async () => {
-  const image = new TestImage(['load', 'load']);
+test('Una imagen cargada no se descarta si el marco oculto retrasa decode()', async () => {
+  const image = new TestImage(['load']);
   image.decode = () => new Promise(() => {});
-  assert.equal(await loadLogo(image, 'logos/INDUSTRIA/19.png', { base: 'https://example.test/', timeout: 5 }), false);
+  assert.equal(await loadLogo(image, 'logos/INDUSTRIA/19.png', { base: 'https://example.test/', timeout: 5 }), true);
+  assert.equal(image.requests.length, 1);
+});
+
+test('Un SVG con dimensiones válidas no depende de que decode() esté disponible', async () => {
+  const image = new TestImage(['load']);
+  image.decode = () => { throw new Error('El navegador no admite decode para este SVG'); };
+  assert.equal(await loadLogo(image, 'logos/INDUSTRIA/20.svg', { base: 'https://example.test/', timeout: 5 }), true);
+  assert.equal(image.requests.length, 1);
 });

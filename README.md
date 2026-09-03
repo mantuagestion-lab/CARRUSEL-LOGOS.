@@ -46,10 +46,12 @@ Los nombres accesibles y la procedencia están en logos/catalogo.json; actualiza
 
 - El HTML publicado contiene estilo, código y catálogo en una sola respuesta. Las imágenes se sirven desde el mismo GitHub Pages.
 - Una imagen que no responde tiene tiempo límite y reintento. Las otras pueden aparecer mientras termina la carga; si falla todo, se muestra un botón para reintentar.
-- Los cambios de ancho conservan las imágenes cargadas y la posición relativa del movimiento.
-- El ciclo se calcula con el ancho real del grupo y se repite para cubrir el espacio disponible.
+- Los cambios de ancho conservan las imágenes cargadas y la posición relativa del movimiento. Si el marco se oculta o queda con ancho cero, el ciclo se recupera al reaparecer, incluso si vuelve al mismo tamaño.
+- El carrusel ocupa todo el marco, sin reservar una franja para controles. El ciclo utiliza dos grupos idénticos y un desplazamiento porcentual para evitar desfases al cambiar de tamaño.
 - En marcos menores de 360 px se reservan dos espacios para logos; entre 360 y 639 px, tres.
-- Hay pausa manual, pausa al pasar el puntero o enfocar y desplazamiento manual para usuarios que prefieren reducir el movimiento.
+- No hay botón de pausa ni pausa al pasar el cursor, tocar, hacer clic o enfocar. Solo se suspende el trabajo cuando la pestaña está oculta o el marco no tiene espacio.
+- Se respeta la preferencia de accesibilidad de movimiento reducido del dispositivo: en ese caso los logos siguen visibles y se pueden desplazar manualmente.
+- Una imagen con evento de carga y dimensiones válidas no espera a `decode()`, que puede aplazarse en marcos ocultos.
 - Los enlaces utilizan la dirección de la publicación que estés visitando.
 
 ## Comprobaciones
@@ -61,6 +63,8 @@ python3 -m unittest discover -s tests -p 'test_*.py'
 ~~~
 
 Las comprobaciones cubren conexiones fallidas, respuestas atascadas, reintentos, cancelación, distintos anchos, coincidencia de archivos publicados, cambios en el catálogo y nombres accesibles. La revisión visual en el Google Sites real se realiza después de publicar; no equivale a las comprobaciones de código.
+
+La [prueba de tamaño](tests/resize-preview.html) permite pasar de computadora a 390, 320 o 240 px, ocultar el marco y volver a mostrarlo, o empezar la carga oculto. Muestra los logos cargados y el estado del movimiento sin modificar el catálogo. Es una página de comprobación separada: sus controles no se insertan en Google Sites.
 
 El resultado público se genera en dist/. El workflow .github/workflows/update-manifest.yml utiliza las acciones oficiales de Pages. Si una comprobación falla, no se ejecuta una nueva publicación.
 
