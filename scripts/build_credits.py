@@ -14,7 +14,9 @@ def build_credits(root: Path, output: Path, manifest):
             key = src.split('?')[0].removeprefix('logos/')
             details = catalog.get(key, {})
             name = details.get('nombre', Path(key).stem)
-            state = 'Archivo mejorado' if details.get('estado') == 'mejorado' else 'Hace falta un original mejor'
+            state = {'mejorado': 'Original recuperado o mejorado',
+                     'vectorizado': 'SVG vectorizado de la referencia'}.get(
+                         details.get('estado'), 'Hace falta un original mejor')
             origin = details.get('origen')
             link = f'<a href="{escape(origin, quote=True)}" target="_blank" rel="noopener">Ver fuente</a>' if origin else ''
             note = details.get('nota', 'Archivo añadido después de la revisión inicial; revisar su calidad.')
@@ -30,7 +32,7 @@ article{padding:18px;background:white;border:1px solid #ddd;border-radius:12px}.
 .image{height:125px;display:flex;align-items:center;justify-content:center}.image img{max-width:220px;max-height:100px;width:auto;height:auto}
 .status{font-weight:bold}article p,article a{font-size:14px}footer{padding-top:28px;font-size:14px}
 </style><main><a href="./">Volver a los carruseles</a><h1>Origen y calidad de los logos</h1>
-<p>Revisión inicial del 2 de septiembre de 2026. Los logos marcados como pendientes todavía necesitan su archivo original de buena calidad. Sustituir una imagen pequeña por una copia ampliada no recupera sus detalles.</p>
+<p>Revisión del 3 de septiembre de 2026. Los SVG vectorizados son reconstrucciones de las referencias aportadas, no los archivos originales de las marcas. Los logos pendientes todavía necesitan un original de buena calidad. Residencial se conserva para una revisión posterior.</p>
 <div class="grid">''' + ''.join(cards) + '''</div><footer>
 <p>Las marcas pertenecen a sus respectivos titulares. Esta página documenta los archivos utilizados en los carruseles de Mantua.</p>
 <p>GKN Automotive Logo 2021: Performance Communications, obtenido de <a href="https://commons.wikimedia.org/wiki/File:GKN_Automotive_Logo_2021.png">Wikimedia Commons</a>, bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. Archivo sin modificar; ajustado únicamente al espacio de visualización.</p>

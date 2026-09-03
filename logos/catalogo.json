@@ -1,145 +1,157 @@
 {
-  "COMERCIAL/19.png": {
+  "COMERCIAL/19-dif-apaseo-el-grande.svg": {
     "nombre": "DIF Apaseo el Grande",
-    "estado": "pendiente",
-    "origen": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/COMERCIAL/19.png",
-    "nota": "Original de 80 × 50 px. Hace falta el SVG, PDF vectorial o una imagen original mayor; no se ha ampliado artificialmente."
+    "estado": "vectorizado",
+    "origen": null,
+    "nota": "SVG vectorizado y limpiado a partir de la imagen aportada por Mantua. Contiene curvas, no una imagen incrustada. Conserva la identidad de la referencia; no es el archivo vectorial original de la marca. La referencia era pequeña: se retiraron el fondo y el reflejo fotográficos y se simplificaron los brillos. Conviene sustituirlo por el original si se obtiene.",
+    "origen_anterior": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/COMERCIAL/19.png"
   },
-  "COMERCIAL/20.png": {
+  "COMERCIAL/20-dif-cortazar.svg": {
     "nombre": "DIF Cortazar",
-    "estado": "pendiente",
-    "origen": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/COMERCIAL/20.png",
-    "nota": "Original de 80 × 50 px. Hace falta el SVG, PDF vectorial o una imagen original mayor; no se ha ampliado artificialmente."
+    "estado": "vectorizado",
+    "origen": null,
+    "nota": "SVG vectorizado y limpiado a partir de la imagen aportada por Mantua. Contiene curvas, no una imagen incrustada. Conserva la identidad de la referencia; no es el archivo vectorial original de la marca.",
+    "origen_anterior": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/COMERCIAL/20.png"
   },
-  "COMERCIAL/21.png": {
+  "COMERCIAL/21-oxford-instituto-educativo.svg": {
     "nombre": "Oxford Instituto Educativo",
-    "estado": "pendiente",
-    "origen": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/COMERCIAL/21.png",
-    "nota": "Original de 80 × 50 px. Hace falta el SVG, PDF vectorial o una imagen original mayor; no se ha ampliado artificialmente."
+    "estado": "vectorizado",
+    "origen": null,
+    "nota": "SVG vectorizado y limpiado a partir de la imagen aportada por Mantua. Contiene curvas, no una imagen incrustada. Conserva la identidad de la referencia; no es el archivo vectorial original de la marca.",
+    "origen_anterior": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/COMERCIAL/21.png"
   },
-  "COMERCIAL/22.png": {
-    "nombre": "Emblema de cliente comercial (por identificar)",
-    "estado": "pendiente",
-    "origen": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/COMERCIAL/22.png",
-    "nota": "Original de 80 × 50 px. Hace falta el SVG, PDF vectorial o una imagen original mayor; no se ha ampliado artificialmente."
+  "COMERCIAL/22-tecnologico-de-celaya.svg": {
+    "nombre": "Tecnológico de Celaya",
+    "estado": "vectorizado",
+    "origen": null,
+    "nota": "SVG vectorizado y limpiado a partir de la imagen aportada por Mantua. Contiene curvas, no una imagen incrustada. Conserva la identidad de la referencia; no es el archivo vectorial original de la marca.",
+    "origen_anterior": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/COMERCIAL/22.png"
   },
-  "COMERCIAL/23.png": {
+  "COMERCIAL/23-utec-celaya.svg": {
     "nombre": "UTEC Celaya",
-    "estado": "pendiente",
-    "origen": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/COMERCIAL/23.png",
-    "nota": "Original de 80 × 50 px. Hace falta el SVG, PDF vectorial o una imagen original mayor; no se ha ampliado artificialmente."
+    "estado": "vectorizado",
+    "origen": null,
+    "nota": "SVG vectorizado y limpiado a partir de la imagen aportada por Mantua. Contiene curvas, no una imagen incrustada. Conserva la identidad de la referencia; no es el archivo vectorial original de la marca. Se conserva el fondo naranja y se reconstruye el relieve con contornos y sombra vectorial.",
+    "origen_anterior": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/COMERCIAL/23.png"
   },
-  "COMERCIAL/24.png": {
+  "COMERCIAL/24-centro-escolar-grimm.svg": {
     "nombre": "Centro Escolar Grimm",
-    "estado": "pendiente",
-    "origen": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/COMERCIAL/24.png",
-    "nota": "Original de 80 × 50 px. Hace falta el SVG, PDF vectorial o una imagen original mayor; no se ha ampliado artificialmente."
+    "estado": "vectorizado",
+    "origen": null,
+    "nota": "SVG vectorizado y limpiado a partir de la imagen aportada por Mantua. Contiene curvas, no una imagen incrustada. Conserva la identidad de la referencia; no es el archivo vectorial original de la marca.",
+    "origen_anterior": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/COMERCIAL/24.png"
   },
-  "COMERCIAL/25.png": {
+  "COMERCIAL/25-itesba-colegio.png": {
     "nombre": "ITESBA Colegio",
     "estado": "pendiente",
     "origen": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/COMERCIAL/25.png",
     "nota": "Original de 80 × 50 px. Hace falta el SVG, PDF vectorial o una imagen original mayor; no se ha ampliado artificialmente."
   },
-  "COMERCIAL/26.png": {
+  "COMERCIAL/26-la-salle-leon.svg": {
     "nombre": "La Salle León",
-    "estado": "pendiente",
-    "origen": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/COMERCIAL/26.png",
-    "nota": "Original de 80 × 50 px. Hace falta el SVG, PDF vectorial o una imagen original mayor; no se ha ampliado artificialmente."
+    "estado": "vectorizado",
+    "origen": null,
+    "nota": "SVG vectorizado y limpiado a partir de la imagen aportada por Mantua. Contiene curvas, no una imagen incrustada. Conserva la identidad de la referencia; no es el archivo vectorial original de la marca.",
+    "origen_anterior": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/COMERCIAL/26.png"
   },
-  "INDUSTRIA/17.png": {
+  "INDUSTRIA/17-gkn-automotive.png": {
     "nombre": "GKN Automotive",
     "estado": "mejorado",
     "origen": "https://commons.wikimedia.org/wiki/File:GKN_Automotive_Logo_2021.png",
     "nota": "PNG 1656 × 556; sin modificación del archivo.",
     "archivo_original": "https://upload.wikimedia.org/wikipedia/commons/9/96/GKN_Automotive_Logo_2021.png"
   },
-  "INDUSTRIA/18.png": {
+  "INDUSTRIA/18-gentherm.svg": {
     "nombre": "Gentherm",
-    "estado": "pendiente",
-    "origen": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/INDUSTRIA/18.png",
-    "nota": "Original de 80 × 50 px. Hace falta el SVG, PDF vectorial o una imagen original mayor; no se ha ampliado artificialmente."
+    "estado": "vectorizado",
+    "origen": null,
+    "nota": "SVG vectorizado y limpiado a partir de la imagen aportada por Mantua. Contiene curvas, no una imagen incrustada. Conserva la identidad de la referencia; no es el archivo vectorial original de la marca.",
+    "origen_anterior": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/INDUSTRIA/18.png"
   },
-  "INDUSTRIA/19.png": {
+  "INDUSTRIA/19-honda.png": {
     "nombre": "Honda",
     "estado": "mejorado",
     "origen": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS",
     "nota": "PNG 2737 × 2220 recuperado del historial del repositorio original; objeto Git 6440216cbc92eb597d5b4e7c6b3d34a3d586d415."
   },
-  "INDUSTRIA/20.svg": {
+  "INDUSTRIA/20-hanwa.svg": {
     "nombre": "Hanwa",
     "estado": "mejorado",
     "origen": "https://www.hanwa.co.jp/en/",
     "nota": "SVG oficial; composición horizontal.",
     "archivo_original": "https://www.hanwa.co.jp/ms/ms-sttn/themes/hkthm16/images/en/common/header_logo.svg"
   },
-  "INDUSTRIA/21.svg": {
+  "INDUSTRIA/21-hutchinson.svg": {
     "nombre": "Hutchinson",
     "estado": "mejorado",
     "origen": "https://www.hutchinson.com/en",
     "nota": "SVG oficial; composición horizontal.",
     "archivo_original": "https://www.hutchinson.com/themes/custom/hutchinson/logo.svg"
   },
-  "INDUSTRIA/22.gif": {
+  "INDUSTRIA/22-sigma-alimentos.gif": {
     "nombre": "Sigma Alimentos",
     "estado": "mejorado",
     "origen": "https://commons.wikimedia.org/wiki/File:Sigma_Alimentos_Logo.gif",
     "nota": "GIF estático de 885 × 501 de la versión ya utilizada.",
     "archivo_original": "https://upload.wikimedia.org/wikipedia/commons/2/29/Sigma_Alimentos_Logo.gif"
   },
-  "INDUSTRIA/23.svg": {
+  "INDUSTRIA/23-bachoco.svg": {
     "nombre": "Bachoco",
     "estado": "mejorado",
     "origen": "https://bachoco.com/",
     "nota": "SVG oficial actual, con lema.",
     "archivo_original": "https://bachoco.com/img/logo.svg"
   },
-  "INDUSTRIA/24.png": {
+  "INDUSTRIA/24-golden-foods.png": {
     "nombre": "Golden Foods",
     "estado": "mejorado",
     "origen": "https://www.goldenfoods.com.mx/",
     "nota": "PNG original de 1134 × 930.",
     "archivo_original": "https://images.squarespace-cdn.com/content/v1/651d9435c354f02413e87e12/ba28310e-1004-4d7f-96a2-a40ff764bb82/logo_goldenfoods.png"
   },
-  "INDUSTRIA/25.png": {
+  "INDUSTRIA/25-usabiaga.png": {
     "nombre": "Usabiaga",
     "estado": "pendiente",
     "origen": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/INDUSTRIA/25.png",
-    "nota": "Original de 80 × 50 px. Hace falta el SVG, PDF vectorial o una imagen original mayor; no se ha ampliado artificialmente."
+    "nota": "Se conserva el PNG original de 80 × 50 px. La captura aportada no permite reconstruir con fidelidad las letras pequeñas; queda pendiente de un original mayor o vectorial."
   },
-  "INDUSTRIA/26.png": {
+  "INDUSTRIA/26-nutriline-agro-science.svg": {
     "nombre": "Nutriline Agro Science",
-    "estado": "pendiente",
-    "origen": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/INDUSTRIA/26.png",
-    "nota": "Original de 80 × 50 px. Hace falta el SVG, PDF vectorial o una imagen original mayor; no se ha ampliado artificialmente."
+    "estado": "mejorado",
+    "origen": "https://nutriline-ag.com/en/img/Content/nutriline-logo-logo.svg",
+    "nota": "Trazados originales del sitio de Nutriline, conservando su composición vertical actual y Agro Science. Se restauraron los colores de la página 2 del portafolio oficial: #191f20, #19a0db y #84c54f. Esta versión no incluye el lema de la imagen antigua.",
+    "origen_anterior": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/INDUSTRIA/26.png",
+    "fuente_colores": "https://nutriline-ag.com/en/upload/pdf/file-portafolio-nutriline-1-comprimido.pdf"
   },
-  "INDUSTRIA/27.svg": {
+  "INDUSTRIA/27-beta-procesos.svg": {
     "nombre": "Beta Procesos",
     "estado": "mejorado",
     "origen": "https://www.betaprocesos.com.mx/",
     "nota": "SVG oficial.",
     "archivo_original": "https://www.betaprocesos.com.mx/imagenes/logo.svg"
   },
-  "INDUSTRIA/28.png": {
-    "nombre": "Cliente industrial (nombre por confirmar)",
-    "estado": "pendiente",
-    "origen": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/INDUSTRIA/28.png",
-    "nota": "Original de 80 × 50 px. Hace falta el SVG, PDF vectorial o una imagen original mayor; no se ha ampliado artificialmente."
+  "INDUSTRIA/28-corticon.svg": {
+    "nombre": "Corticon",
+    "estado": "vectorizado",
+    "origen": null,
+    "nota": "SVG vectorizado y limpiado a partir de la imagen aportada por Mantua. Contiene curvas, no una imagen incrustada. Conserva la identidad de la referencia; no es el archivo vectorial original de la marca.",
+    "origen_anterior": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/INDUSTRIA/28.png"
   },
-  "INDUSTRIA/29.svg": {
+  "INDUSTRIA/29-witzenmann.svg": {
     "nombre": "Witzenmann",
     "estado": "mejorado",
     "origen": "https://www.witzenmann.com/",
     "nota": "SVG de la identidad actual del sitio oficial; el símbolo y las letras difieren de la versión antigua.",
     "archivo_original": "https://www.witzenmann.com/layout/assets/images/witzenmann_logo_new_noclaim.svg"
   },
-  "INDUSTRIA/30.png": {
+  "INDUSTRIA/30-asturias.svg": {
     "nombre": "Asturias",
-    "estado": "pendiente",
-    "origen": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/INDUSTRIA/30.png",
-    "nota": "Original de 80 × 50 px. Hace falta el SVG, PDF vectorial o una imagen original mayor; no se ha ampliado artificialmente."
+    "estado": "vectorizado",
+    "origen": null,
+    "nota": "SVG vectorizado y limpiado a partir de la imagen aportada por Mantua. Contiene curvas, no una imagen incrustada. Conserva la identidad de la referencia; no es el archivo vectorial original de la marca.",
+    "origen_anterior": "https://github.com/MANTUA-DECORACION/CARRUSEL-LOGOS/blob/b4575d2476fd29026c6e6d4f4cc8d4da25407fe1/logos/INDUSTRIA/30.png"
   },
-  "INDUSTRIA/31.svg": {
+  "INDUSTRIA/31-thyssenkrupp.svg": {
     "nombre": "thyssenkrupp",
     "estado": "mejorado",
     "origen": "https://commons.wikimedia.org/wiki/File:Thyssenkrupp_AG_Logo_2015.svg",

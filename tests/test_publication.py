@@ -12,6 +12,32 @@ from update_manifest import update_manifest
 
 
 class PublicationTest(unittest.TestCase):
+    def test_descriptive_names_keep_order_and_allow_a_new_logo(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            group = root / 'logos' / 'INDUSTRIA'
+            group.mkdir(parents=True)
+            (root / 'index.html').write_text(
+                '<link rel="stylesheet" href="style.css">'
+                '<script src="script.js" defer></script>'
+                '<script id="logo-manifest" type="application/json">{}</script>')
+            (root / 'script.js').write_text('/* fixture */')
+            (root / 'style.css').write_text('/* fixture */')
+            for filename in ('19-honda.png', '18-gentherm.svg', '17-gkn-automotive.png'):
+                (group / filename).write_bytes(b'fixture')
+            (root / 'logos' / 'catalogo.json').write_text(json.dumps({
+                'INDUSTRIA/18-gentherm.svg': {'nombre': 'Gentherm'},
+                'INDUSTRIA/19-honda.png': {'nombre': 'Honda'},
+                'INDUSTRIA/17-gkn-automotive.png': {'nombre': 'GKN Automotive'}
+            }))
+            result = update_manifest(root)['INDUSTRIA']
+            self.assertEqual([item['alt'] for item in result], ['GKN Automotive', 'Gentherm', 'Honda'])
+            self.assertEqual(len({item['src'].split('?')[0] for item in result}), 3)
+            (group / '20-nueva-marca.svg').write_text('<svg/>')
+            updated = update_manifest(root)['INDUSTRIA']
+            self.assertEqual(len(updated), 4)
+            self.assertTrue(updated[-1].startswith('logos/INDUSTRIA/20-nueva-marca.svg?v='))
+
     def test_replace_add_and_remove_logos_updates_catalog_and_fallback(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

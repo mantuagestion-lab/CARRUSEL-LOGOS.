@@ -1,10 +1,10 @@
 'use strict';
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const fs = require('node:fs');
-const path = require('node:path');
 const { parsePng, stripPngMetadata } = require('../scripts/sanitize-metadata.cjs');
-const original = fs.readFileSync(path.join(__dirname, '../logos/INDUSTRIA/17.png'));
+// Stable one-pixel fixture: changing or renaming a client's logo must not
+// break metadata tests or prevent a later PNG-to-SVG replacement.
+const original = Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACXBIWXMAAAPoAAAD6AG1e1JrAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==', 'base64');
 
 function chunk(type, content) {
   const bytes = Buffer.from(content);

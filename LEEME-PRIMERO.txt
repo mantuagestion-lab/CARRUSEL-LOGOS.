@@ -26,7 +26,10 @@ funcionan. Los logos pueden mejorarse después sin cambiar los enlaces.
 
 CALIDAD DE LAS IMÁGENES
 
-31 logos: 11 mejorados y 20 pendientes de un original mejor.
+31 logos: 12 con originales recuperados o mejorados, 10 vectorizados
+desde las imágenes aportadas y 9 pendientes de un original mejor.
+Los archivos de Empresas e Instituciones tienen nombres reconocibles;
+el número inicial conserva su orden. Residencial no se modificó.
 Consulta LOGOS.md o la revisión accesible desde el panel publicado.
 Para los pendientes necesitamos SVG, PDF vectorial o imágenes originales
 de buena resolución. Agrandar los PNG pequeños no recupera sus detalles.

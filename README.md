@@ -26,7 +26,11 @@ Los enlaces apuntan a la cuenta y al repositorio nuevos. No hay que escribir el 
 
 ## Calidad de los logos
 
-La revisión inicial contiene **31 logos: 11 mejorados y 20 pendientes de un original mejor**. Los archivos iniciales medían 80 × 50 px. Honda se recuperó del historial; se incorporaron SVG y archivos de mayor resolución para otras diez marcas.
+La revisión del 3 de septiembre de 2026 contiene **31 logos: 12 con originales recuperados o mejorados, 10 vectorizados desde las imágenes aportadas y 9 pendientes de un original mejor**. Se conservaron los 11 archivos que ya estaban mejorados y se incorporaron los trazados oficiales de Nutriline con los colores de su portafolio.
+
+Las nuevas vectorizaciones son SVG reales, sin PNG/JPG incrustados ni fuentes externas. Son reconstrucciones de las referencias, no archivos originales de las marcas. DIF Apaseo el Grande y UTEC tienen simplificaciones del fondo o los efectos fotográficos para su uso en el carrusel. Nutriline utiliza la composición vertical de su identidad oficial actual, sin el lema antiguo.
+
+Usabiaga sigue pendiente porque la captura no permite reconstruir bien su letra pequeña. ITESBA no recibió un archivo nuevo. Los ocho archivos de Residencial se conservaron sin cambios para revisarlos después.
 
 La lista está en [LOGOS.md](LOGOS.md). El panel publicado también tiene **Revisar la calidad y el origen de los logos**, con imágenes y procedencia.
 
@@ -36,7 +40,9 @@ La lista está en [LOGOS.md](LOGOS.md). El panel publicado también tiene **Revi
 
 ## Cambiar imágenes después
 
-Conserva las carpetas logos/INDUSTRIA, logos/COMERCIAL y logos/RESIDENCIAL. Puedes añadir, sustituir o quitar archivos PNG, JPG, WebP, SVG o GIF estáticos. Al sustituir un PNG por un SVG, elimina el PNG anterior para que la marca no aparezca dos veces.
+Conserva las carpetas logos/INDUSTRIA, logos/COMERCIAL y logos/RESIDENCIAL. Los 23 archivos de Industria y Comercial ahora tienen nombres reconocibles, por ejemplo `18-gentherm.svg`, `19-honda.png` y `26-la-salle-leon.svg`. El prefijo numérico conserva el orden anterior; los archivos se ordenan por nombre. Residencial conserva sus nombres actuales hasta su revisión.
+
+Puedes añadir, sustituir o quitar archivos PNG, JPG, WebP, SVG o GIF estáticos. Para reemplazar un logo, usa el mismo nombre y extensión. Al sustituir un PNG por un SVG, elimina el PNG anterior para que la marca no aparezca dos veces, y actualiza su clave en `logos/catalogo.json`. La tabla de equivalencias está en [LOGOS.md](LOGOS.md).
 
 Cada cambio en main construye y publica la página, sus imágenes y el catálogo. Cada archivo recibe una revisión según su contenido para evitar imágenes antiguas en caché. No es necesario editar manifest.json a mano.
 
