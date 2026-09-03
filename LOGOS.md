@@ -4,7 +4,7 @@ Actualización del 3 de septiembre de 2026: **31 logos; 13 con originales recupe
 
 ## Cambios de esta entrega
 
-- DIF Apaseo el Grande se reemplazó con la nueva referencia: únicamente el símbolo familiar y el texto del frente, sin círculo, fondo morado ni escudo posterior. Las formas se reconstruyeron con geometría limpia y la leyenda se trazó desde la imagen.
+- DIF Apaseo el Grande se reemplazó con la nueva referencia: únicamente el símbolo familiar y el texto del frente, sin círculo, fondo morado ni escudo posterior. Las formas se reconstruyeron con geometría limpia y la leyenda se recompuso en contornos legibles.
 - Usabiaga pasó a SVG. Se recuperó del sitio de la marca la misma identidad aportada por Mantua, con el símbolo y la palabra completos: el PNG nuevo venía recortado arriba y abajo.
 - Los otros 29 archivos de logos, incluidos los ocho de Residencial, se conservan exactamente iguales. No cambian los enlaces, el movimiento ni los espacios del carrusel.
 - Se conservan los nombres `19-dif-apaseo-el-grande.svg` y `25-usabiaga.svg`; únicamente cambia la extensión de Usabiaga, sin duplicarlo ni alterar el orden.
@@ -60,7 +60,7 @@ Para reemplazar una imagen conserva su nombre y extensión. Si cambia la extensi
 
 - Asturias, Gentherm, Corticon, Tecnológico de Celaya, Oxford, Grimm, DIF Cortazar y La Salle se trazaron y limpiaron a partir de las imágenes aportadas.
 - Los contornos se suavizaron; no se recuperaron detalles que no existían en las referencias.
-- DIF Apaseo el Grande usa la nueva imagen aportada del emblema familiar morado: figuras con interiores lavanda, amarillo y azul claro, iniciales DIF y leyenda Apaseo el Grande. Solo se conserva el frente y el fondo queda transparente. Los contornos regulares se reconstruyeron para eliminar las irregularidades fotográficas; no es un archivo original de la institución.
+- DIF Apaseo el Grande usa la nueva imagen aportada del emblema familiar morado: figuras con interiores lavanda, amarillo y azul claro, iniciales DIF y leyenda Apaseo el Grande. Solo se conserva el frente y el fondo queda transparente. Los contornos regulares se reconstruyeron para eliminar las irregularidades fotográficas; la leyenda se recompuso con DejaVu Sans Bold convertido en contornos, conservando texto, color y proporciones aproximadas. No es el archivo vectorial ni la tipografía originales de la institución.
 - UTEC conserva su composición y fondo naranja; el relieve fotográfico se representa con contornos y una sombra SVG.
 - Nutriline conserva los trazados y la composición vertical de su SVG oficial actual, con “Agro Science”, sin el lema anterior. Los colores se obtuvieron de la página 2 de su [portafolio oficial](https://nutriline-ag.com/en/upload/pdf/file-portafolio-nutriline-1-comprimido.pdf): `#191f20`, `#19a0db`, `#84c54f`.
 - Se identificaron las imágenes antes descritas como “Emblema comercial” y “Cliente industrial”: Tecnológico de Celaya y Corticon, respectivamente.
